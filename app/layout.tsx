@@ -3,6 +3,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Roboto } from 'next/font/google'
 import { ThemeProvider } from '@/components/theme/ThemeProvider'
+import BootstrapClient from '@/components/BootstrapClient'
 
 const roboto = Roboto({
   weight: '400',
@@ -21,8 +22,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="cs">
-      <body className={'theme-container ' + roboto.variable}>
-        <ThemeProvider>{children}</ThemeProvider>
+      <body className={'theme-container d-flex flex-column min-vh-100 ' + roboto.variable}>
+        <ThemeProvider>
+          {children}
+          <BootstrapClient />
+        </ThemeProvider>
       </body>
     </html>
   )

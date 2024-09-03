@@ -8,9 +8,9 @@ export const EmailFooter = () => {
 
   return (
     <>
-      <Link href="mailto:aneta.potomska@seznam.cz">
+      <Link href="mailto:aneta.potomska@seznam.cz" target="_blank">
         <svg
-          className="footer-icon small-icon scale-on-hover"
+          className="hoverable-icon small-icon "
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 512 512"
         >

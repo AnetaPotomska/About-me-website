@@ -1,5 +1,5 @@
 import { Footer } from '@/components/footer/Footer'
-import { Navbar } from '@/components/Navbar'
+import { Navbar } from '@/components/navbar/Navbar'
 
 export default async function WebLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
@@ -10,12 +10,3 @@ export default async function WebLayout({ children }: Readonly<{ children: React
     </>
   )
 }
-
-/*
-<ThemeContextProvider>
-  <Navbar />
-  <main>{children}</main>
-  <Footer />
-  <ThemeSwitch />
-</ThemeContextProvider>
-*/

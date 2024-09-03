@@ -8,9 +8,9 @@ export const LinkedinFooter = () => {
 
   return (
     <>
-      <Link href="https://www.linkedin.com/in/aneta-potomska/">
+      <Link href="https://www.linkedin.com/in/aneta-potomska/" target="_blank">
         <svg
-          className="footer-icon small-icon scale-on-hover"
+          className="hoverable-icon small-icon "
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 448 512"
         >

@@ -5,11 +5,6 @@ export const metadata: Metadata = {
 }
 
 export default function ContactLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return (
-    <>
-      {children}
-     
-    </>
-  )
+  return <>{children}</>
 }
- //<Toaster position="top-right" />
+//<Toaster position="top-right" />

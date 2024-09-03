@@ -1,4 +1,4 @@
-import { NavPath } from "./types";
+import { NavPath } from './types'
 
 export const navPaths: NavPath[] = [
   {

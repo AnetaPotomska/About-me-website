@@ -1,7 +1,7 @@
 export const MoonIcon = () => {
   return (
     <svg
-      className="nav-icon small-icon scale-on-hover ms-md-4"
+      className="nav-icon small-icon ms-md-4"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 512 512"
     >

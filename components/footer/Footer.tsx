@@ -5,7 +5,7 @@ import { LinkedinFooter } from './LinkedinFooter'
 export const Footer = () => {
   return (
     <>
-      <footer className="mb-10 px-4 text-center">
+      <footer className="pb-4 mt-auto text-center">
         <div className="d-flex align-items-center justify-content-center gap-4 mb-4">
           <EmailFooter />
           <LinkedinFooter />

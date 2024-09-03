@@ -8,9 +8,9 @@ export const GithubFooter = () => {
 
   return (
     <>
-      <Link href="https://github.com/AnetaPotomska">
+      <Link href="https://github.com/AnetaPotomska" target="_blank">
         <svg
-          className="footer-icon small-icon scale-on-hover"
+          className="hoverable-icon small-icon "
           xmlns="http://www.w3.org/2000/svg"
           viewBox={theme === 'light' ? '0 0 496 512' : '0 0 448 512'}
         >
