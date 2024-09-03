@@ -1,7 +1,7 @@
 import { Locale } from '@/lib/i18n/config'
 import { setUserLocale } from '@/lib/i18n/func'
 import { Language } from '@/lib/types'
-import { startTransition } from 'react'
+import { startTransition, useState } from 'react'
 
 interface LanguageSelectorProps {
   defaultValue: string
@@ -10,7 +10,10 @@ interface LanguageSelectorProps {
 }
 
 export const LanguageSelector = ({ defaultValue, items, label }: LanguageSelectorProps) => {
+  const [selectedValue, setSelectedValue] = useState(defaultValue)
+
   function onChange(value: string) {
+    setSelectedValue(value)
     const locale = value as Locale
     startTransition(() => {
       setUserLocale(locale)
@@ -19,14 +22,14 @@ export const LanguageSelector = ({ defaultValue, items, label }: LanguageSelecto
 
   return (
     <div>
-      <select className="form-select" onChange={(event) => onChange(event.target.value)}>
+      <select
+        className="web-form-select web-btn-secondary"
+        value={selectedValue}
+        onChange={(event) => onChange(event.target.value)}
+      >
         {items.map((item) => {
           return (
-            <option
-              {...(item.value === defaultValue && { selected: true })}
-              value={item.value}
-              key={item.value}
-            >
+            <option value={item.value} key={item.value}>
               {item.value}
             </option>
           )

@@ -1,13 +1,17 @@
 'use client'
-import { navPaths } from '@/lib/data'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { LanguageSwitch } from '../language/LanguageSwitch'
 import { ThemeToggler } from '../theme/ThemeToggler'
 import { Brand } from './Brand'
 import { HamburgerIcon } from './HamburgerIcon'
+import { NavPath } from '@/lib/types'
 
-export const Navbar = () => {
+interface NavbarProps {
+  navPaths: NavPath[]
+}
+
+export const Navbar = ({ navPaths }: NavbarProps) => {
   const currPathName = usePathname()
   return (
     <>

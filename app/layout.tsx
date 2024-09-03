@@ -18,7 +18,6 @@ export const metadata: Metadata = {
   icons: {
     icon: '/favicon.ico',
   },
-  description: 'Životopis a zdokumentovaní vytvořených projektů Anety Potomské.',
 }
 
 export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

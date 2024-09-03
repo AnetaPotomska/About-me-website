@@ -1,5 +1,25 @@
 {
-  "footer_text": "easdasdn",
+  "welcomePage": {
+    "mainContent": "Hello, I am software engeneer with interest in web development.",
+    "primaryAction": "What I do",
+    "secondaryAction": "Download CV",
+    "picAlt": "Profile picture",
+    "cvLang": "en",
+    "name": "Aneta Potomská"
+  },
+
+  "navPaths": {
+    "about": "About",
+    "projects": "Projects",
+    "skills": "Skills",
+    "education": "Education",
+    "contact": "Contact"
+  },
+
+  "footer": {
+    "footerText": "App was written using: Next.js, TypeScript a Bootstrap. Design was created in: Figma.",
+    "name": "Aneta Potomská"
+  },
 
   "LanguageSelect": {
     "en": "English",

@@ -72,6 +72,24 @@ small {
   font: var(--font-small);
 }
 
+
+/* Select */
+
+.web-form-select, .web-form-select:hover, .web-form-select:active, .web-form-select:focus {
+  background-color: var(--color-background); 
+  color: var(--color-text);
+  font: var(--font-link);
+  box-shadow: none;
+  cursor: pointer;
+  padding: max(8px, 1vh) max(12px, 1vw);
+  border-radius: 8px;
+}
+
+.web-form-select:hover {
+  scale: 105%;
+  transition: var(--transition)
+}
+
 /* Navigation */
 
 .nav-list {
@@ -206,7 +224,7 @@ small {
   height: auto;
   border-radius: 8px;
   min-width: 250px;
-  max-width: 600px;
+  max-width: 500px;
   position: relative;
 }
 
@@ -282,7 +300,7 @@ small {
   color: var(--color-text);
 }
 
-.web-btn-secondary:hover {
+.web-btn-secondary:hover, .web-btn-secondary:focus, .web-btn-secondary:active {
   border: 2px solid var(--color-primary);
   transition: var(--transition);
 }
@@ -305,20 +323,4 @@ small {
   .no-wrap {
     white-space: nowrap;
   }
-}
-
-/* Select */
-
-.form-select, .form-select:hover, .form-select:active, .form-select:focus {
-  border: none;
-  background-color: var(--color-background); 
-  color: var(--color-text);
-  font: var(--font-link);
-  box-shadow: 2px 2px 2px 2px var(--color-accent);
-  outline: 0;
-  cursor: pointer;
-}
-
-.form-select option:hover {
-  background-color: var(--color-accent) !important;
 }

@@ -15,7 +15,7 @@ export const LanguageSwitch = () => {
         },
         {
           value: 'cs',
-          label: t('de'),
+          label: t('cs'),
         },
       ]}
       label={t('label')}

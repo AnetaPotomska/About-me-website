@@ -4,7 +4,7 @@ import { GithubFooter } from './GithubFooter'
 import { LinkedinFooter } from './LinkedinFooter'
 
 export const Footer = () => {
-  const t = useTranslations()
+  const t = useTranslations('footer')
   return (
     <>
       <footer className="pb-4 mt-auto text-center">
@@ -14,9 +14,9 @@ export const Footer = () => {
           <GithubFooter />
         </div>
         <small>
-          &copy; Aneta Potomská
+          &copy; {t('name')}
           <br />
-          {t('footer_text')}
+          {t('footerText')}
         </small>
       </footer>
     </>

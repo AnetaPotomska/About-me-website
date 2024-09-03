@@ -1,5 +1,25 @@
 {
-  "footer_text": "Aplikace byla napsána pomocí: Next.js, TypeScript a Bootstrap. Návrh byl vytvořen pomocí: Figma.",
+  "welcomePage": {
+    "mainContent": "Zdravím, jsem softwarový inženýr se zájmem o web development.",
+    "primaryAction": "Čím se zabývám",
+    "secondaryAction": "Stáhnout životopis",
+    "picAlt": "Profilový obrázek",
+    "cvLang": "cs",
+    "name": "Aneta Potomská"
+  },
+
+  "navPaths": {
+    "about": "O mně",
+    "projects": "Projekty",
+    "skills": "Dovednosti",
+    "education": "Vzdělání",
+    "contact": "Kontakt"
+  },
+
+  "footer": {
+    "footerText": "Aplikace byla napsána pomocí: Next.js, TypeScript a Bootstrap. Návrh byl vytvořen pomocí: Figma.",
+    "name": "Aneta Potomská"
+  },
 
   "LanguageSelect": {
     "en": "Angličtina",
