@@ -1,8 +1,10 @@
+import { useTranslations } from 'next-intl'
 import { EmailFooter } from './EmailFooter'
 import { GithubFooter } from './GithubFooter'
 import { LinkedinFooter } from './LinkedinFooter'
 
 export const Footer = () => {
+  const t = useTranslations()
   return (
     <>
       <footer className="pb-4 mt-auto text-center">
@@ -14,8 +16,7 @@ export const Footer = () => {
         <small>
           &copy; Aneta Potomská
           <br />
-          Aplikace byla napsána pomocí: Next.js, TypeScript a Bootstrap. Návrh byl vytvořen pomocí:
-          Figma.
+          {t('footer_text')}
         </small>
       </footer>
     </>

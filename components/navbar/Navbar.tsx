@@ -2,6 +2,7 @@
 import { navPaths } from '@/lib/data'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { LanguageSwitch } from '../language/LanguageSwitch'
 import { ThemeToggler } from '../theme/ThemeToggler'
 import { Brand } from './Brand'
 import { HamburgerIcon } from './HamburgerIcon'
@@ -39,8 +40,11 @@ export const Navbar = () => {
                   </li>
                 )
               })}
-              <li>
+              <li className="nav-item ms-md-4" key="themeToggler">
                 <ThemeToggler />
+              </li>
+              <li className="nav-item" key="languageSwitch">
+                <LanguageSwitch />
               </li>
             </ul>
           </div>

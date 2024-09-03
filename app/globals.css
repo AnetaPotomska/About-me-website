@@ -306,3 +306,19 @@ small {
     white-space: nowrap;
   }
 }
+
+/* Select */
+
+.form-select, .form-select:hover, .form-select:active, .form-select:focus {
+  border: none;
+  background-color: var(--color-background); 
+  color: var(--color-text);
+  font: var(--font-link);
+  box-shadow: 2px 2px 2px 2px var(--color-accent);
+  outline: 0;
+  cursor: pointer;
+}
+
+.form-select option:hover {
+  background-color: var(--color-accent) !important;
+}

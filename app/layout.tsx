@@ -4,6 +4,8 @@ import type { Metadata } from 'next'
 import { Roboto } from 'next/font/google'
 import { ThemeProvider } from '@/components/theme/ThemeProvider'
 import BootstrapClient from '@/components/BootstrapClient'
+import { NextIntlClientProvider } from 'next-intl'
+import { getLocale, getMessages } from 'next-intl/server'
 
 const roboto = Roboto({
   weight: '400',
@@ -19,12 +21,15 @@ export const metadata: Metadata = {
   description: 'Životopis a zdokumentovaní vytvořených projektů Anety Potomské.',
 }
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  const locale = await getLocale()
+  const messages = await getMessages()
+
   return (
-    <html lang="cs">
+    <html lang={locale}>
       <body className={'theme-container d-flex flex-column min-vh-100 ' + roboto.variable}>
         <ThemeProvider>
-          {children}
+          <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
           <BootstrapClient />
         </ThemeProvider>
       </body>
