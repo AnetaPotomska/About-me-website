@@ -18,12 +18,37 @@
 
   "footer": {
     "footerText": "Aplikace byla napsána pomocí: Next.js, TypeScript a Bootstrap. Návrh byl vytvořen pomocí: Figma.",
-    "name": "Aneta Potomská"
+    "name": "Aneta Potomská",
+    "icons": {
+      "email": "Napište mi",
+      "linkedin": "Linkedin",
+      "github": "GitHub"
+    }
   },
 
-  "LanguageSelect": {
+  "themeToggle": {
+    "sunIcon": "Tmavý režim",
+    "moonIcon": "Světlý režim"
+  },
+
+  "languageSelect": {
     "en": "Angličtina",
     "cs": "Čeština",
     "label": "Výběr jazyka"
+  },
+
+  "cardFooter": {
+    "about": "Pro stránku",
+    "src": "Zdrojový kód",
+    "live": "Stránka projektu",
+    "moreInfo": "Více infromací"
+  },
+
+  "projects": {
+    "summerjob": {
+      "label": "SummerJob",
+      "content": "V rámci své bakalářské práce jsem pro dobrovolnickou brigádu jsem provedla rozvoj webové stránky pro správu akce.",
+      "imgAlt": "Detaily příspěvku z nástěnky SummerJob"
+    }
   }
 }

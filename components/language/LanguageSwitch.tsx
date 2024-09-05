@@ -2,7 +2,7 @@ import { useLocale, useTranslations } from 'next-intl'
 import { LanguageSelector } from './LanguageSelector'
 
 export const LanguageSwitch = () => {
-  const t = useTranslations('LanguageSelect')
+  const t = useTranslations('languageSelect')
   const locale = useLocale()
 
   return (

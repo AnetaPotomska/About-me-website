@@ -4,8 +4,8 @@ import { usePathname } from 'next/navigation'
 import { LanguageSwitch } from '../language/LanguageSwitch'
 import { ThemeToggler } from '../theme/ThemeToggler'
 import { Brand } from './Brand'
-import { HamburgerIcon } from './HamburgerIcon'
 import { NavPath } from '@/lib/types'
+import { HamburgerIcon } from '../icons/HamburgerIcon'
 
 interface NavbarProps {
   navPaths: NavPath[]

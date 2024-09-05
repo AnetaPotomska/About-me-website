@@ -9,9 +9,9 @@ export const Footer = () => {
     <>
       <footer className="pb-4 mt-auto text-center">
         <div className="d-flex align-items-center justify-content-center gap-4 mb-4">
-          <EmailFooter />
-          <LinkedinFooter />
-          <GithubFooter />
+          <EmailFooter label={t('icons.email')} />
+          <LinkedinFooter label={t('icons.linkedin')} />
+          <GithubFooter label={t('icons.github')} href="https://github.com/AnetaPotomska" />
         </div>
         <small>
           &copy; {t('name')}

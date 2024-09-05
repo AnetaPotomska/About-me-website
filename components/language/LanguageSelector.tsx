@@ -23,14 +23,16 @@ export const LanguageSelector = ({ defaultValue, items, label }: LanguageSelecto
   return (
     <div>
       <select
-        className="web-form-select web-btn-secondary"
+        className="web-form-select web-btn-tertiary"
         value={selectedValue}
         onChange={(event) => onChange(event.target.value)}
+        title={label}
+        aria-label={label}
       >
         {items.map((item) => {
           return (
             <option value={item.value} key={item.value}>
-              {item.value}
+              {item.label}
             </option>
           )
         })}

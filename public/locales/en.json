@@ -18,12 +18,37 @@
 
   "footer": {
     "footerText": "App was written using: Next.js, TypeScript a Bootstrap. Design was created in: Figma.",
-    "name": "Aneta Potomská"
+    "name": "Aneta Potomská",
+    "icons": {
+      "email": "Write to me",
+      "linkedin": "Linkedin",
+      "github": "GitHub"
+    }
   },
 
-  "LanguageSelect": {
+  "themeToggle": {
+    "sunIcon": "Dark mode",
+    "moonIcon": "Light mode"
+  },
+
+  "languageSelect": {
     "en": "English",
     "cs": "Czech",
     "label": "Language selection"
+  },
+
+  "cardFooter": {
+    "about": "For website",
+    "src": "Source code",
+    "live": "Project website",
+    "moreInfo": "More info"
+  },
+
+  "projects": {
+    "summerjob": {
+      "label": "SummerJob",
+      "content": "As part of my bachelor's thesis for the volunteer brigade I undertook the development of a website to manage the event.",
+      "imgAlt": "Post details from the SummerJob message board"
+    }
   }
 }

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import profilePic from '@/public/aneta.png'
+import profilePic from '@/public/headShot.png'
 import { DownloadIcon } from '@/components/icons/DownloadIcon'
 import { GoToIcon } from '@/components/icons/GoToIcon'
 import { useTranslations } from 'next-intl'

@@ -9,9 +9,9 @@ export const Brand = ({ currPathName }: BrandProps) => {
     <>
       <Link className="navbar-brand" href="/">
         <svg
-          className={'nav-icon ' + (currPathName === '/' ? ' active' : '')}
-          width="50"
-          height="auto"
+          className={
+            'icon big-icon text-to-secondary-color' + (currPathName === '/' ? ' active' : '')
+          }
           viewBox="0 0 280 280"
           xmlns="http://www.w3.org/2000/svg"
         >
