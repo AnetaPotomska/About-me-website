@@ -1,10 +1,10 @@
 'use client'
 
-import summerjob from '@/public/projects/summerjob.png'
 import Image, { StaticImageData } from 'next/image'
 import { ProjectCardFooter } from './ProjectCardFooter'
 import { useState } from 'react'
 import { PhotoModal } from '../modal/PhotoModal'
+import { ProjectDetailModal } from './ProjectDetailModal'
 
 interface ProjectCardProps {
   label: string
@@ -14,6 +14,8 @@ interface ProjectCardProps {
   aboutHref?: string
   srcHref?: string
   liveHref?: string
+  details: string
+  usedTechnologies: string[]
 }
 
 export const ProjectCard = ({
@@ -24,25 +26,47 @@ export const ProjectCard = ({
   aboutHref,
   srcHref,
   liveHref,
+  details,
+  usedTechnologies,
 }: ProjectCardProps) => {
   const [showPhotoModal, setShowPhotoModal] = useState(false)
+  const [showInfoModal, setShowInfoModal] = useState(false)
+  const onInfoClick = () => {
+    setShowInfoModal(true)
+  }
   return (
-    <div className="project-card web-shadow">
-      <div className="image-content mb-4" onClick={() => setShowPhotoModal(true)}>
-        <Image className="project-image" src={summerjob} alt={imgAlt} />
-      </div>
-      <div className="project-content-footer">
-        <div>
-          <h3>{label}</h3>
-          <p>{content}</p>
+    <>
+      <div className="project-card-bg"></div>
+      <div className="project-card web-shadow">
+        <div className="project-content-footer">
+          <div>
+            <h3>{label}</h3>
+            <div className="image-content mb-4" onClick={() => setShowPhotoModal(true)}>
+              <Image className="project-image" src={imgSrc} alt={imgAlt} />
+            </div>
+            <p>{content}</p>
+          </div>
+          <ProjectCardFooter
+            aboutHref={aboutHref}
+            srcHref={srcHref}
+            liveHref={liveHref}
+            onInfoClick={onInfoClick}
+          />
         </div>
-        <ProjectCardFooter aboutHref={aboutHref} srcHref={srcHref} liveHref={liveHref} />
+        {showPhotoModal && (
+          <div className="image-content">
+            <PhotoModal imgSrc={imgSrc} onClose={() => setShowPhotoModal(false)} label={label} />
+          </div>
+        )}
+        {showInfoModal && (
+          <ProjectDetailModal
+            onClose={() => setShowInfoModal(false)}
+            label={label}
+            content={details}
+            usedTechnologies={usedTechnologies}
+          />
+        )}
       </div>
-      {showPhotoModal && (
-        <div className="image-content">
-          <PhotoModal imgSrc={imgSrc} onClose={() => setShowPhotoModal(false)} />
-        </div>
-      )}
-    </div>
+    </>
   )
 }

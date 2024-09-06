@@ -48,7 +48,20 @@
     "summerjob": {
       "label": "SummerJob",
       "content": "As part of my bachelor's thesis for the volunteer brigade I undertook the development of a website to manage the event.",
-      "imgAlt": "Post details from the SummerJob message board"
+      "imgAlt": "Post details from the SummerJob message board",
+      "details": "Work was done on the frontend (overall UI/UX improvement), backend and database schema. The project included requirements gathering and analysis (ER conceptual model), design (Figma), programming and testing (SuperTest, Chai, Mocha, usability testing)."
+    },
+    "asciiart": {
+      "label": "Ascii Art",
+      "content": "Convertor of any image to ASCII art form.",
+      "imgAlt": "Example of using Ascii Art converter",
+      "details": "The project is mainly focused on correct compliance of OOP principles and testing of all parts of the application."
+    },
+    "java": {
+      "label": "Web application",
+      "content": "It is a primitive system for the study department.",
+      "imgAlt": "Adding a student in the application",
+      "details": "The application mainly focuses on a properly written backend."
     }
   }
 }

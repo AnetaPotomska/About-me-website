@@ -7,16 +7,21 @@ import { GithubFooter } from '../footer/GithubFooter'
 import { InfoIcon } from '../icons/InfoIcon'
 import { OutsideWebsiteIcon } from '../icons/OutsideWebsiteIcon'
 import { QuestionMarkIcon } from '../icons/QuestionMarkIcon'
-import { InfoModal } from '../modal/InfoModal'
+import { ProjectDetailModal } from './ProjectDetailModal'
 
 interface ProjectCardFooterProps {
   aboutHref?: string
   srcHref?: string
   liveHref?: string
+  onInfoClick: () => void
 }
 
-export const ProjectCardFooter = ({ aboutHref, srcHref, liveHref }: ProjectCardFooterProps) => {
-  const [showPhotoModal, setShowPhotoModal] = useState(false)
+export const ProjectCardFooter = ({
+  aboutHref,
+  srcHref,
+  liveHref,
+  onInfoClick,
+}: ProjectCardFooterProps) => {
   const t = useTranslations('cardFooter')
   return (
     <div className="project-footer">
@@ -33,10 +38,9 @@ export const ProjectCardFooter = ({ aboutHref, srcHref, liveHref }: ProjectCardF
           </Link>
         )}
       </div>
-      <span onClick={() => setShowPhotoModal(true)}>
+      <span onClick={onInfoClick}>
         <InfoIcon />
       </span>
-      {showPhotoModal && <InfoModal onClose={() => setShowPhotoModal(false)} content="aaaaaa" />}
     </div>
   )
 }

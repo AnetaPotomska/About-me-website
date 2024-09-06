@@ -4,12 +4,13 @@ import { Modal } from './Modal'
 interface PhotoModalProps {
   onClose: () => void
   imgSrc: StaticImageData
+  label: string
 }
 
-export const PhotoModal = ({ onClose, imgSrc }: PhotoModalProps) => {
+export const PhotoModal = ({ onClose, imgSrc, label }: PhotoModalProps) => {
   return (
     <>
-      <Modal onClose={onClose}>
+      <Modal onClose={onClose} title={label}>
         <Image className="modal-image" src={imgSrc} alt={''} />
       </Modal>
     </>

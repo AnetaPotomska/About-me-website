@@ -13,7 +13,6 @@ export type ThemeContextType = {
 
 export type Attribute = `data-${string}` | 'class'
 
-
 export type Language = {
   value: string
   label: string

@@ -48,7 +48,20 @@
     "summerjob": {
       "label": "SummerJob",
       "content": "V rámci své bakalářské práce jsem pro dobrovolnickou brigádu jsem provedla rozvoj webové stránky pro správu akce.",
-      "imgAlt": "Detaily příspěvku z nástěnky SummerJob"
+      "imgAlt": "Detaily příspěvku z nástěnky SummerJob",
+      "details": "Práce byly prováděny na frontendu (celkové zlepšení UI/UX), backendu a na schématu databáze. V rámci projektu byl proveden sběr a analýza požadavků (ER konceptuální model), návrh (Figma), programování a testování (SuperTest, Chai, Mocha, testování použitelnosti)."
+    },
+    "asciiart": {
+      "label": "Ascii Art",
+      "content": "Převodník libovolného obrázku na ASCII art podobu.",
+      "imgAlt": "Příklad použití Ascii Art převodníku",
+      "details": "Projekt je především zaměřen na správné dodržování OOP principů a testování všech částí aplikace."
+    },
+    "java": {
+      "label": "Webová aplikace",
+      "content": "Jedná se o primitivní systém pro studijní oddělení.",
+      "imgAlt": "Přidání studenta v aplikaci",
+      "details": "Aplikace se především orientuje na správně napsaný backend."
     }
   }
 }

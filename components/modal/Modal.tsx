@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react'
+import { CloseIcon } from '../icons/CloseIcon'
 
 interface ModalProps {
   children: React.ReactNode
@@ -29,17 +30,19 @@ export function Modal({ children, title, onClose }: ModalProps) {
   return (
     <>
       <div className="modal-backdrop fade show"></div>
-      <div className={`modal fade show modal-lg d-block`} tabIndex={-1}>
+      <div className="modal fade show modal-lg d-block" tabIndex={-1}>
         <div className="modal-dialog">
           <div className="modal-content rounded-3" ref={modalRef}>
             <div className="modal-header">
-              <h4 className="modal-title">{title}</h4>
+              <h2 className="modal-title">{title}</h2>
               <button
                 type="button"
-                className="btn-close"
+                className="navbar-toggler"
                 onClick={() => onClose()}
                 aria-label="Close"
-              />
+              >
+                <CloseIcon />
+              </button>
             </div>
             <div className="modal-body text-wrap">{children}</div>
           </div>
