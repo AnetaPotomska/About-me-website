@@ -63,5 +63,16 @@
       "imgAlt": "Adding a student in the application",
       "details": "The application mainly focuses on a properly written backend."
     }
+  },
+
+  "aboutPage": {
+    "paragraph1": "I am Aneta Potomská, a recent graduate (2024) of the Bachelor's degree in Computer Science specializing in Software Engineering from FIT CTU. For the last three years, this school has been my main focus and what set me on my future career in software development. I had minimal experience prior to this school, so I dedicated my years in college to intensive self-improvement.",
+    "paragraph2": "After getting my red diploma, I can now say that my efforts have paid off. While school has forced me to work on a lot of different projects, it's only now that I feel truly ready to work on something bigger - whether it's my personal projects like this website or my work at my job.",
+    "paragraph3": "However, I continue to educate myself. I am currently in the first year of my graduate studies in Software Engineering at FIT CTU. I simply enjoy learning new things and improving myself.",
+    "paragraph4": "I enjoy improving in other areas than just IT. In my spare time I do painting and drawing, whether digital or traditional. Specifically, I have also been formally trained in traditional art. Proof of this is a diploma from the folk school LKMŠ Ostrava. In IT I use this hobby of mine for example in design. And it doesn't have to be just graphic design for websites. It also finds its application in the actual design of programs, because it needs a considerable amount of creativity.",
+    "imgAlt1": "Logo FIT ČVUT",
+    "imgAlt2": "Digital self-portrait",
+    "header1": "Undergraduate education",
+    "header2": "Hobbies"
   }
 }

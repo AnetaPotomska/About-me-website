@@ -63,5 +63,16 @@
       "imgAlt": "Přidání studenta v aplikaci",
       "details": "Aplikace se především orientuje na správně napsaný backend."
     }
+  },
+
+  "aboutPage": {
+    "paragraph1": "Jsem Aneta Potomská čerstvý absolvent (2024) bakalářského programu Informatika specializace Sofwarové inženýrství z FIT ČVUT. Poslední tři roky byla tato škola pro mě to hlavní čemu jsem se věnovala a co mě nasměrovalo na moji budoucí kariéru v softwarovém vývoji. Před touto školou jsem měla minimální zkušenosti, takže jsem své roky na fakultě věnovala intenzivnímu sebezlepšování.",
+    "paragraph2": "Po získání červeného diplomu si teď mohu říct, že se mé snahy vyplatily. Škola mě sice donutila pracovat na spoustě různých projektech, ale až teď si připadám skutečně připravená pracovat na něčem větším - ať už se jedná například o mé soukromé projekty jako je tato webová stránka, nebo práce v zaměstnání.",
+    "paragraph3": "Pokračuji však ve sebevzdělávání i nadále. Aktuálně jsem v prvním ročníku navazujícího studia ve specializaci Softwarové inženýrství na FIT ČVUT. Učit se nové věci a zlepšovat mě prostě baví.",
+    "paragraph4": "Baví mě se zlepšovat i v jiných oblastech než jenom v IT. Ve volném čase se věnuji malbě a kresbě ať už digitální nebo tradiční. Konkrétně jsem se v tradiční tvorbě vzdělala i formálně. Důkazem toho je diplom z lidové školy LKMŠ Ostrava. V IT tuto mou zálibu využívám například při designu. A nemusí jít jenom o grafický design webových stránek. Své uplatnění se najde i při samotném návrhu programů, protože to potřebuje značnou dávku kreativity.",
+    "imgAlt1": "Logo FIT ČVUT",
+    "imgAlt2": "Digitální autoportrét",
+    "header1": "Bakalářské studium",
+    "header2": "Záliby"
   }
 }

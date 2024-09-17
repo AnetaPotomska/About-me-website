@@ -36,7 +36,11 @@ export default function WebLayout({ children }: Readonly<{ children: React.React
           },
         ]}
       />
-      <main>{children}</main>
+      <main>
+        <div className="container-fluid page-container">
+          <div className="page-content">{children}</div>
+        </div>
+      </main>
       <Footer />
     </>
   )
