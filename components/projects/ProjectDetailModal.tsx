@@ -1,24 +1,23 @@
+import { ProjectDetails } from '@/lib/types'
 import { Modal } from '../modal/Modal'
 
 interface ProjectDetailModalProps {
   label: string
-  content: string
-  usedTechnologies: string[]
+  content: ProjectDetails
   onClose: () => void
 }
 
-export const ProjectDetailModal = ({
-  label,
-  content,
-  usedTechnologies,
-  onClose,
-}: ProjectDetailModalProps) => {
+export const ProjectDetailModal = ({ label, content, onClose }: ProjectDetailModalProps) => {
   return (
     <Modal onClose={onClose} title={label}>
       <div className="project-detail-modal-content">
-        <p>{content}</p>
+        <div className="paragraph">
+          {content.paragraphs.map((paragraph: string) => (
+            <p>{paragraph}</p>
+          ))}
+        </div>
         <div className="pill-group align-self-end">
-          {usedTechnologies.map((tech) => {
+          {content.technologies.map((tech: string) => {
             return <div className="pill-tech">{tech}</div>
           })}
         </div>

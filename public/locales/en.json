@@ -47,32 +47,83 @@
   "projects": {
     "summerjob": {
       "label": "SummerJob",
-      "content": "As part of my bachelor's thesis for the volunteer brigade I undertook the development of a website to manage the event.",
+      "content": "As part of my bachelor's thesis for the volunteer brigade SummerJob I undertook the development of a website to manage the event.",
       "imgAlt": "Post details from the SummerJob message board",
-      "details": "Work was done on the frontend (overall UI/UX improvement), backend and database schema. The project included requirements gathering and analysis (ER conceptual model), design (Figma), programming and testing (SuperTest, Chai, Mocha, usability testing)."
+      "details": {
+        "paragraphs": [
+          "As part of my bachelor's thesis, I developed an existing volunteering app called SummerJob. The aim of this app is to help organizers oversee the progress of the event. It includes, for example, a clear record of temps, jobs, locations, years, as well as a scheduler that generates the optimal plan for the day.",
+          "I specifically added a bulletin board to the app so that organizers can communicate important news to their users. In addition, I fixed a good number of bugs and added new functionality - for example, selecting a location from a map, uploading and displaying photos, and overall improved the look and functionality of the forms.",
+          "Work was done on the frontend (overall UI/UX improvement), backend, and database schema. The project included requirements gathering and analysis (ER conceptual model), design (Figma), programming (see below) and testing (SuperTest, Chai, Mocha, usability testing)."
+        ],
+        "technologies": ["TYPESCRIPT", "NEXT.JS", "PRISMA", "HTML", "CSS", "FIGMA"]
+      }
     },
     "asciiart": {
       "label": "Ascii Art",
       "content": "Convertor of any image to ASCII art form.",
       "imgAlt": "Example of using Ascii Art converter",
-      "details": "The project is mainly focused on correct compliance of OOP principles and testing of all parts of the application."
+      "details": {
+        "paragraphs": [
+          "The project is mainly focused on correct compliance with OOP principles and testing of all parts of the application. The main effort in writing this program is modularity of the parts and adherence to GRASP high coherence and low interdependency. The components of the project are arranged in an overhead structure.",
+          "The program can be run in the sbt shell. When running, it is possible to add arguments to e.g. change the conversion table, add filters (reversal across axis, lightness), save location. The converter works by converting the supplied image to black and white and then assigning a value to each pixel according to the conversion table."
+        ],
+        "technologies": ["SCALA", "MOCKITO"]
+      }
     },
     "java": {
       "label": "Web application",
-      "content": "It is a primitive system for the study department.",
+      "content": "Primitive system for the study department to keep track of students, courses and study materials.",
       "imgAlt": "Adding a student in the application",
-      "details": "The application mainly focuses on a properly written backend."
+      "details": {
+        "paragraphs": [
+          "The project maintains a three-layer architecture. The application is primarily focused on a well-written backend. For example, the Controller-Service-Repository pattern is used here. A Postgres database is used for data storage. Only 3 tables are stored in the database, but all types of cardinality relationships (1:1, 1:N, M:N) are demonstrated between them.",
+          "The frontend is written in the Vue.js framework. The frontend was secondary to the application. The code would need refactoring, but it is functional and clear enough for the needs of the project."
+        ],
+        "technologies": ["JAVA", "POSTGRESQL", "VUE.JS"]
+      }
     }
   },
 
   "aboutPage": {
-    "paragraph1": "I am Aneta Potomská, a recent graduate (2024) of the Bachelor's degree in Computer Science specializing in Software Engineering from FIT CTU. For the last three years, this school has been my main focus and what set me on my future career in software development. I had minimal experience prior to this school, so I dedicated my years in college to intensive self-improvement.",
-    "paragraph2": "After getting my red diploma, I can now say that my efforts have paid off. While school has forced me to work on a lot of different projects, it's only now that I feel truly ready to work on something bigger - whether it's my personal projects like this website or my work at my job.",
-    "paragraph3": "However, I continue to educate myself. I am currently in the first year of my graduate studies in Software Engineering at FIT CTU. I simply enjoy learning new things and improving myself.",
-    "paragraph4": "I enjoy improving in other areas than just IT. In my spare time I do painting and drawing, whether digital or traditional. Specifically, I have also been formally trained in traditional art. Proof of this is a diploma from the folk school LKMŠ Ostrava. In IT I use this hobby of mine for example in design. And it doesn't have to be just graphic design for websites. It also finds its application in the actual design of programs, because it needs a considerable amount of creativity.",
-    "imgAlt1": "Logo FIT ČVUT",
-    "imgAlt2": "Digital self-portrait",
-    "header1": "Undergraduate education",
-    "header2": "Hobbies"
-  }
+    "education": {
+      "paragraphs": [
+        "I am Aneta Potomská, a recent graduate (2024) of the Bachelor's degree in Computer Science specializing in Software Engineering from FIT CTU. For the last three years, this school has been my main focus and what set me on my future career in software development. I had minimal experience prior to this school, so I dedicated my years in college to intensive self-improvement.",
+        "After getting my red diploma, I can now say that my efforts have paid off. While school has forced me to work on a lot of different projects, it's only now that I feel truly ready to work on something bigger - whether it's my personal projects like this website or my work at my job."
+      ],
+      "imgAlt": "Logo FIT CTU",
+      "header": "Undergraduate education"
+    },
+
+    "hobbies": {
+      "paragraphs": [
+        "However, I continue to educate myself. I am currently in the first year of my graduate studies in Software Engineering at FIT CTU. I simply enjoy learning new things and improving myself.",
+        "I enjoy improving in other areas than just IT. In my spare time I do painting and drawing, whether digital or traditional. Specifically, I have also been formally trained in traditional art. Proof of this is a diploma from the folk school LKMŠ Ostrava. In IT I use this hobby of mine for example in design. And it doesn't have to be just graphic design for websites. It also finds its application in the actual design of programs, because it needs a considerable amount of creativity."
+      ],
+      "imgAlt": "Digital self-portrait",
+      "header": "Hobbies"
+    }
+  },
+
+  "skillsPage": [
+    {
+      "header": "Programming",
+      "list": ["C", "C++", "Java", "Scala", "R", "TypeScript", "CSS", "HTML", "SQL", "Latex"]
+    },
+    {
+      "header": "Frameworks",
+      "list": ["Spring Boot", "Next.js"]
+    },
+    {
+      "header": "Tools",
+      "list": ["Git", "Figma", "Docker", "Enterprise Architect"]
+    },
+    {
+      "header": "Licenses",
+      "list": ["Driver's license (B)"]
+    },
+    {
+      "header": "Languages",
+      "list": ["English | full professional knowladge", "Czech | native speaker"]
+    }
+  ]
 }

@@ -15,8 +15,7 @@ export default function Projects() {
         imgAlt={t('summerjob.imgAlt')}
         srcHref="https://github.com/AnetaPotomska/summerjob"
         aboutHref="https://summerjob.eu/"
-        details={t('summerjob.details')}
-        usedTechnologies={['TYPESCRIPT', 'NEXT.JS', 'PRISMA', 'HTML', 'CSS', 'FIGMA']}
+        details={t.raw('summerjob.details')}
       />
       <ProjectCard
         label={t('asciiart.label')}
@@ -24,8 +23,7 @@ export default function Projects() {
         imgSrc={asciiart}
         imgAlt={t('asciiart.imgAlt')}
         srcHref="https://github.com/AnetaPotomska/ASCIIArt"
-        details={t('asciiart.details')}
-        usedTechnologies={['SCALA', 'MOCKITO']}
+        details={t.raw('asciiart.details')}
       />
       <ProjectCard
         label={t('java.label')}
@@ -33,8 +31,7 @@ export default function Projects() {
         imgSrc={java}
         imgAlt={t('java.imgAlt')}
         srcHref="https://github.com/AnetaPotomska/BI-TJV_Technologie-Java"
-        details={t('java.details')}
-        usedTechnologies={['JAVA']}
+        details={t.raw('java.details')}
       />
     </div>
   )

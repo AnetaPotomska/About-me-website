@@ -11,7 +11,15 @@ export type ThemeContextType = {
   toggleTheme: () => void
 }
 
-export type Attribute = `data-${string}` | 'class'
+export type ProjectDetails = {
+  paragraphs: string[]
+  technologies: string[]
+}
+
+export type SkillsContent = {
+  header: string
+  list: string[]
+}
 
 export type Language = {
   value: string

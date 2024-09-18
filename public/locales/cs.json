@@ -47,32 +47,83 @@
   "projects": {
     "summerjob": {
       "label": "SummerJob",
-      "content": "V rámci své bakalářské práce jsem pro dobrovolnickou brigádu jsem provedla rozvoj webové stránky pro správu akce.",
+      "content": "V rámci své bakalářské práce jsem pro dobrovolnickou brigádu SummerJob provedla rozvoj webové stránky pro správu akce.",
       "imgAlt": "Detaily příspěvku z nástěnky SummerJob",
-      "details": "Práce byly prováděny na frontendu (celkové zlepšení UI/UX), backendu a na schématu databáze. V rámci projektu byl proveden sběr a analýza požadavků (ER konceptuální model), návrh (Figma), programování a testování (SuperTest, Chai, Mocha, testování použitelnosti)."
+      "details": {
+        "paragraphs": [
+          "V rámci své bakalářské práce jsem rozvinnula již existující aplikaci pro dobrovolnickou brigádu SummerJob. Cílem této aplikace je pomoc organizátorům dohlížet na průběh akce. Součástí je například přehledná evidence brigádníků, prací, míst, ročníků a dále pak plánovač, který generuje optimální plán pro daný den.",
+          "Já jsem konkrétně do aplikace přidala nástěnku, aby tak měli organizátoři možnost svým uživatelům sdělit důležité novinky. Kromě toho jsem opravila nemalý počet chyb a přidala nové funkcionality - například výběr místa z mapy, nahrávání a zobrazení fotografií a celkově jsem vylepšila vzhled a funkcionalitu formulářů.",
+          "Práce byly prováděny na frontendu (celkové zlepšení UI/UX), backendu a na schématu databáze. V rámci projektu byl proveden sběr a analýza požadavků (ER konceptuální model), návrh (Figma), programování (viz níže) a testování (SuperTest, Chai, Mocha, testování použitelnosti)."
+        ],
+        "technologies": ["TYPESCRIPT", "NEXT.JS", "PRISMA", "POSTGRESQL", "HTML", "CSS", "FIGMA"]
+      }
     },
     "asciiart": {
       "label": "Ascii Art",
       "content": "Převodník libovolného obrázku na ASCII art podobu.",
       "imgAlt": "Příklad použití Ascii Art převodníku",
-      "details": "Projekt je především zaměřen na správné dodržování OOP principů a testování všech částí aplikace."
+      "details": {
+        "paragraphs": [
+          "Projekt je především zaměřen na správné dodržování OOP principů a testování všech částí aplikace. Hlavní snahou při psaní tohoto programu je modulárnost jednotlivých částí a dodržování GRASP vysoké soudržnosti a nízké provázanosti. Složky projektu jsou uspořádany do přeheldné struktury.",
+          "Program je možné spustit v sbt shellu. Při spuštění je možnost přidat argumenty pro napříkald změnu konverzní tabulky, přidání filtrů (obrácení přes osu, světlost), místo uložení. Převodník funguje tak, že dodaný obrázek převede na černobílou verzi a poté každému pixelu přiřadí hodnotu podle tabulky převodu."
+        ],
+        "technologies": ["SCALA", "MOCKITO"]
+      }
     },
     "java": {
       "label": "Webová aplikace",
-      "content": "Jedná se o primitivní systém pro studijní oddělení.",
+      "content": "Primitivní systém pro studijní oddělení pro evidenci studentů, předmětů a studijních materiálů.",
       "imgAlt": "Přidání studenta v aplikaci",
-      "details": "Aplikace se především orientuje na správně napsaný backend."
+      "details": {
+        "paragraphs": [
+          "V projektu je udržovaná třívrstvá architektura. Aplikace se především orientuje na správně napsaný backend. Konkrétně se zde například využívá vzor Controller-Service-Repository. Pro ukládání dat se používá Postgresová databáze. V databázi jsou uloženy pouze 3 tabulky, ale jsou mezi nimi demonstrovány všechny typy vazeb podle kardinality (1:1, 1:N, M:N).",
+          "Frontend je napsaný ve frameworku Vue.js. Frontend byl pro aplikaci až druhotný. Kód by potřeboval refaktorizaci, ale pro potřeby projektu je dostatečně funkční a přehledný."
+        ],
+        "technologies": ["JAVA", "POSTGRESQL", "VUE.JS"]
+      }
     }
   },
 
   "aboutPage": {
-    "paragraph1": "Jsem Aneta Potomská čerstvý absolvent (2024) bakalářského programu Informatika specializace Sofwarové inženýrství z FIT ČVUT. Poslední tři roky byla tato škola pro mě to hlavní čemu jsem se věnovala a co mě nasměrovalo na moji budoucí kariéru v softwarovém vývoji. Před touto školou jsem měla minimální zkušenosti, takže jsem své roky na fakultě věnovala intenzivnímu sebezlepšování.",
-    "paragraph2": "Po získání červeného diplomu si teď mohu říct, že se mé snahy vyplatily. Škola mě sice donutila pracovat na spoustě různých projektech, ale až teď si připadám skutečně připravená pracovat na něčem větším - ať už se jedná například o mé soukromé projekty jako je tato webová stránka, nebo práce v zaměstnání.",
-    "paragraph3": "Pokračuji však ve sebevzdělávání i nadále. Aktuálně jsem v prvním ročníku navazujícího studia ve specializaci Softwarové inženýrství na FIT ČVUT. Učit se nové věci a zlepšovat mě prostě baví.",
-    "paragraph4": "Baví mě se zlepšovat i v jiných oblastech než jenom v IT. Ve volném čase se věnuji malbě a kresbě ať už digitální nebo tradiční. Konkrétně jsem se v tradiční tvorbě vzdělala i formálně. Důkazem toho je diplom z lidové školy LKMŠ Ostrava. V IT tuto mou zálibu využívám například při designu. A nemusí jít jenom o grafický design webových stránek. Své uplatnění se najde i při samotném návrhu programů, protože to potřebuje značnou dávku kreativity.",
-    "imgAlt1": "Logo FIT ČVUT",
-    "imgAlt2": "Digitální autoportrét",
-    "header1": "Bakalářské studium",
-    "header2": "Záliby"
-  }
+    "education": {
+      "paragraphs": [
+        "Jsem Aneta Potomská čerstvý absolvent (2024) bakalářského programu Informatika specializace Sofwarové inženýrství z FIT ČVUT. Poslední tři roky byla tato škola pro mě to hlavní čemu jsem se věnovala a co mě nasměrovalo na moji budoucí kariéru v softwarovém vývoji. Před touto školou jsem měla minimální zkušenosti, takže jsem své roky na fakultě věnovala intenzivnímu sebezlepšování.",
+        "Po získání červeného diplomu si teď mohu říct, že se mé snahy vyplatily. Škola mě sice donutila pracovat na spoustě různých projektech, ale až teď si připadám skutečně připravená pracovat na něčem větším - ať už se jedná například o mé soukromé projekty jako je tato webová stránka, nebo práce v zaměstnání."
+      ],
+      "imgAlt": "Logo FIT ČVUT",
+      "header": "Bakalářské studium"
+    },
+
+    "hobbies": {
+      "paragraphs": [
+        "Pokračuji však ve sebevzdělávání i nadále. Aktuálně jsem v prvním ročníku navazujícího studia ve specializaci Softwarové inženýrství na FIT ČVUT. Učit se nové věci a zlepšovat mě prostě baví.",
+        "Baví mě se zlepšovat i v jiných oblastech než jenom v IT. Ve volném čase se věnuji malbě a kresbě ať už digitální nebo tradiční. Konkrétně jsem se v tradiční tvorbě vzdělala i formálně. Důkazem toho je diplom z lidové školy LKMŠ Ostrava. V IT tuto mou zálibu využívám například při designu. A nemusí jít jenom o grafický design webových stránek. Své uplatnění se najde i při samotném návrhu programů, protože to potřebuje značnou dávku kreativity."
+      ],
+      "imgAlt": "Digitální autoportrét",
+      "header": "Záliby"
+    }
+  },
+
+  "skillsPage": [
+    {
+      "header": "Programování",
+      "list": ["C", "C++", "Java", "Scala", "R", "TypeScript", "CSS", "HTML", "SQL", "Latex"]
+    },
+    {
+      "header": "Frameworky",
+      "list": ["Spring Boot", "Next.js"]
+    },
+    {
+      "header": "Nástroje",
+      "list": ["Git", "Figma", "Docker", "Enterprise Architect"]
+    },
+    {
+      "header": "Průkazy",
+      "list": ["Řidičský průkaz B"]
+    },
+    {
+      "header": "Jazyky",
+      "list": ["Angličtina | plně profesionální znalost", "Čeština | rodilá mluvčí"]
+    }
+  ]
 }

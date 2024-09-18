@@ -16,28 +16,28 @@ export const Brand = ({ currPathName }: BrandProps) => {
         >
           <path d="M34 0.5L0 79.5L34 33.5L64.5 79.5L34 0.5Z" />
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M64.5 79.5C64.4521 48.0513 64.5 0.5 64.5 0.5H110.5L76.5 33.5L64.5 79.5ZM73 16L97.5 5L76.5 24.5L73 16Z"
           />
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M64.5 79.5C64.4521 48.0513 64.5 0.5 64.5 0.5H110.5L76.5 33.5L64.5 79.5ZM73 16L97.5 5L76.5 24.5L73 16Z"
           />
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M64.5 79.5C64.4521 48.0513 64.5 0.5 64.5 0.5H110.5L76.5 33.5L64.5 79.5ZM73 16L97.5 5L76.5 24.5L73 16Z"
           />
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M64.5 79.5C64.4521 48.0513 64.5 0.5 64.5 0.5H110.5L76.5 33.5L64.5 79.5ZM73 16L97.5 5L76.5 24.5L73 16Z"
           />
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M64.5 79.5C64.4521 48.0513 64.5 0.5 64.5 0.5H110.5L76.5 33.5L64.5 79.5ZM73 16L97.5 5L76.5 24.5L73 16Z"
           />
           <path d="M39.5 46.5L45.5 55L16.5 61.5L39.5 46.5Z" />
