@@ -1,10 +1,11 @@
-import { useTranslations } from 'next-intl'
-import profile from '@/public/web/about/digitalPortrait.png'
-import cvut from '@/public/web/about/CVUT_FIT.jpg'
 import { AboutCard } from '@/components/about/AboutCard'
+import cvut from '@/public/web/about/CVUT_FIT.jpg'
+import profile from '@/public/web/about/digitalPortrait.png'
+import { useTranslations } from 'next-intl'
 
 export default function About() {
   const t = useTranslations('aboutPage')
+
   return (
     <div className="about-card-group">
       <AboutCard

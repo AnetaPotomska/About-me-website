@@ -3,10 +3,10 @@
 import { cookies, headers } from 'next/headers'
 import { defaultLocale, Locale } from './config'
 
-const COOKIE_NAME = 'NEXT_LOCALE'
+const COOKIE_LOCALE_NAME = process.env.COOKIE_LOCALE_NAME || 'NEXT_LOCALE'
 
 export async function getUserLocale() {
-  const fromCookies = cookies().get(COOKIE_NAME)?.value
+  const fromCookies = cookies().get(COOKIE_LOCALE_NAME)?.value
   if (fromCookies !== undefined) return fromCookies
   const headersList = headers()
   const lang = headersList.get('accept-language')
@@ -14,5 +14,5 @@ export async function getUserLocale() {
 }
 
 export async function setUserLocale(locale: Locale) {
-  cookies().set(COOKIE_NAME, locale)
+  cookies().set(COOKIE_LOCALE_NAME, locale)
 }

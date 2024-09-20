@@ -45,3 +45,8 @@ export type Language = {
   value: string
   label: string
 }
+
+export type ContactFormType = {
+  label: string
+  placeholder: string
+}

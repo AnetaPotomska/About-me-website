@@ -3,12 +3,6 @@
   preffered sizes calculated with https://royalfig.github.io/fluid-typography-calculator/
   */
   --ff: Roboto, sans-serif;
-  /*--font-h1: bold max(40px, 4vw) / max(52px, 5vw) var(--ff);
-  --font-h2: bold max(24px, 2vw) / max(32px, 2.5vw) var(--ff);
-  --font-h3: bold max(16px, 1.2vw) / max(24px, 1.5vw) var(--ff);
-  --font-p: max(16px, 1vw) / max(20px, 2vw) var(--ff);
-  --font-link: max(16px, 1vw) / max(20px, 2vw) var(--ff);
-  --font-small: 12px / 16px var(--ff);*/
   --font-h1: bold clamp(2.5rem, 2.2rem + 1.5vw, 4rem) / 1em var(--ff);
   --font-h2: bold clamp(1.5rem, 1.4rem + 0.5vw, 2rem) / 1.25em var(--ff);
   --font-h3: bold clamp(1rem, 0.85rem + 0.75vw, 1.75rem) / 1.5em var(--ff);
@@ -290,6 +284,10 @@ footer .icon:hover {
   flex-wrap: wrap;
 }
 
+button.web-btn {
+  border: none;
+}
+
 .web-btn,
 .web-btn:link,
 .web-btn:visited {
@@ -360,6 +358,15 @@ footer .icon:hover {
   .no-wrap {
     white-space: nowrap;
   }
+}
+
+.important-text {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.no-text-decorations {
+  text-decoration: none;
 }
 
 /* Page ------------------------------------------------------------------------- */
@@ -475,7 +482,6 @@ footer .icon:hover {
 }
 
 .project-detail-footer {
-  color: var(--color-primary);
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -829,4 +835,42 @@ hr.divider {
     align-items: center;
     justify-content: center;
   }
+}
+
+/* Contact ------------------------------------------------------------------------- */
+
+.contact-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.web-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-small-gap);
+}
+
+.form-control,
+.form-control:focus,
+.form-control:active {
+  outline: none;
+  box-shadow: none;
+  border: none;
+  background-color: var(--color-accent);
+}
+
+.form-control {
+  color: var(--color-text);
+  border-bottom: var(--size-medium-border) solid var(--color-background);
+}
+
+.form-control:active,
+.form-control:focus {
+  border-bottom: var(--size-medium-border) solid var(--color-primary);
+}
+
+.web-form .icon:hover,
+.web-form .icon:focus {
+  fill: var(--color-background);
 }

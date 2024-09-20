@@ -207,5 +207,24 @@
         "paragraphs": []
       }
     }
-  ]
+  ],
+
+  "contactMePage": {
+    "contactDialog": "Kontaktujte mě na email",
+    "emailLabel": "Napište mi",
+    "contactOnPage": {
+      "label": "Nebo mi napište přímo zde",
+      "form": {
+        "textInput": {
+          "label": "Váš email",
+          "placeholder": "jan.novak@seznam.cz"
+        },
+        "textBoxInput": {
+          "label": "Vaše zpráva",
+          "placeholder": "Napište svou zprávu..."
+        }
+      },
+      "submitLabel": "Odeslat"
+    }
+  }
 }

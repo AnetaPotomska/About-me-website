@@ -207,5 +207,24 @@
         "paragraphs": []
       }
     }
-  ]
+  ],
+
+  "contactMePage": {
+    "contactDialog": "Contact me on email",
+    "emailLabel": "Write to me",
+    "contactOnPage": {
+      "label": "Or write to me right here",
+      "form": {
+        "textInput": {
+          "label": "Your email",
+          "placeholder": "john.doe@gmail.com"
+        },
+        "textBoxInput": {
+          "label": "Your message",
+          "placeholder": "Write your message..."
+        }
+      },
+      "submitLabel": "Send"
+    }
+  }
 }

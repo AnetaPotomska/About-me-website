@@ -17,7 +17,7 @@ export const ProjectDetailModal = ({ label, content, onClose }: ProjectDetailMod
           ))}
         </div>
         <div className="project-detail-footer">
-          <h3 className="no-wrap">{content.time}</h3>
+          <p className="no-wrap important-text">{content.time}</p>
           <div className="pill-group align-self-end">
             {content.technologies.map((tech: string) => {
               return <div className="pill-tech">{tech}</div>
