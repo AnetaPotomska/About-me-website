@@ -30,7 +30,7 @@ export default function Welcome() {
               target="_blank"
             >
               <div className="label-btn">
-                <span>{t('secondaryAction')}</span>
+                <span className="no-wrap">{t('secondaryAction')}</span>
                 <DownloadIcon />
               </div>
             </Link>

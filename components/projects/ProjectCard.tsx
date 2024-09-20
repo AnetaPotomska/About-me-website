@@ -35,7 +35,7 @@ export const ProjectCard = ({
     <section key={label} className="project-card web-shadow">
       <div className="project-content-footer">
         <div>
-          <h3>{label}</h3>
+          <h2>{label}</h2>
           <div className="image-content mb-4" onClick={() => setShowPhotoModal(true)}>
             <Image className="project-image" src={imgSrc} alt={imgAlt} />
           </div>

@@ -55,7 +55,8 @@
           "I specifically added a bulletin board to the app so that organizers can communicate important news to their users. In addition, I fixed a good number of bugs and added new functionality - for example, selecting a location from a map, uploading and displaying photos, and overall improved the look and functionality of the forms.",
           "Work was done on the frontend (overall UI/UX improvement), backend, and database schema. The project included requirements gathering and analysis (ER conceptual model), design (Figma), programming (see below) and testing (SuperTest, Chai, Mocha, usability testing)."
         ],
-        "technologies": ["TYPESCRIPT", "NEXT.JS", "PRISMA", "HTML", "CSS", "FIGMA"]
+        "technologies": ["TYPESCRIPT", "NEXT.JS", "PRISMA", "HTML", "CSS", "FIGMA"],
+        "time": "january - june 2024"
       }
     },
     "asciiart": {
@@ -67,7 +68,8 @@
           "The project is mainly focused on correct compliance with OOP principles and testing of all parts of the application. The main effort in writing this program is modularity of the parts and adherence to GRASP high coherence and low interdependency. The components of the project are arranged in an overhead structure.",
           "The program can be run in the sbt shell. When running, it is possible to add arguments to e.g. change the conversion table, add filters (reversal across axis, lightness), save location. The converter works by converting the supplied image to black and white and then assigning a value to each pixel according to the conversion table."
         ],
-        "technologies": ["SCALA", "MOCKITO"]
+        "technologies": ["SCALA", "MOCKITO"],
+        "time": "september 2023"
       }
     },
     "java": {
@@ -79,7 +81,8 @@
           "The project maintains a three-layer architecture. The application is primarily focused on a well-written backend. For example, the Controller-Service-Repository pattern is used here. A Postgres database is used for data storage. Only 3 tables are stored in the database, but all types of cardinality relationships (1:1, 1:N, M:N) are demonstrated between them.",
           "The frontend is written in the Vue.js framework. The frontend was secondary to the application. The code would need refactoring, but it is functional and clear enough for the needs of the project."
         ],
-        "technologies": ["JAVA", "POSTGRESQL", "VUE.JS"]
+        "technologies": ["JAVA", "POSTGRESQL", "VUE.JS"],
+        "time": "august - september 2023"
       }
     }
   },
@@ -124,6 +127,85 @@
     {
       "header": "Languages",
       "list": ["English | full professional knowladge", "Czech | native speaker"]
+    }
+  ],
+
+  "educationPage": [
+    {
+      "schoolName": "CTU FIT",
+      "time": "2024 - 2026?",
+      "description": "Master's degree in Software Engineering",
+      "adittional": "Not yet completed",
+      "details": {
+        "label": "Master's studies",
+        "paragraphs": []
+      }
+    },
+    {
+      "schoolName": "CTU FIT",
+      "time": "2021 - 2024",
+      "description": "Bachelor's degree in Software Engineering",
+      "adittional": "Graduated with honours",
+      "details": {
+        "label": "Bachelor's studies",
+        "paragraphs": [""],
+        "semesters": [
+          {
+            "label": "1st semester",
+            "content": ["C", "Linux OS", "Shell Scripting", "Git"]
+          },
+          {
+            "label": "2nd semester",
+            "content": ["C++", "OOP design", "SQL database (Oracle, PostgreSQL)", "Assembler"]
+          },
+          {
+            "label": "3rd semester",
+            "content": ["DevOps", "Java", "Spring Boot", "Lambda Calculus", "Prolog"]
+          },
+          {
+            "label": "4th semester",
+            "content": [
+              "Cryptography",
+              "Multi-threaded programming in C/C++",
+              "SW team project",
+              "UML modeling"
+            ]
+          },
+          {
+            "label": "5th semester",
+            "content": [
+              "R",
+              "Scala",
+              "Algorithms and Data Structures",
+              "Conceptual Modeling (OntoUML, BPMN, DEMO)"
+            ]
+          },
+          {
+            "label": "6th semester",
+            "content": ["Bachelor thesis (TypeScript, Next.js)", "Latex"]
+          }
+        ]
+      }
+    },
+    {
+      "schoolName": "People's Conservatory and Music School Ostrava",
+      "time": "2018 - 2021",
+      "description": "Art studiues with focus on drawing, painting",
+      "adittional": "Successfully finished",
+      "details": {
+        "label": "Study at the conservatory",
+        "paragraphs": []
+      }
+    },
+    {
+      "schoolName": "Gymnasium Ostrava-Hrabůvka",
+      "time": "2017 - 2021",
+      "description": "General focus",
+      "adittional": "Graduated with honours",
+      "details": {
+        "label": "Study at the gymnasium",
+        "paragraphs": []
+      }
     }
   ]
 }

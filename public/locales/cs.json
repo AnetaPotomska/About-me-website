@@ -55,7 +55,8 @@
           "Já jsem konkrétně do aplikace přidala nástěnku, aby tak měli organizátoři možnost svým uživatelům sdělit důležité novinky. Kromě toho jsem opravila nemalý počet chyb a přidala nové funkcionality - například výběr místa z mapy, nahrávání a zobrazení fotografií a celkově jsem vylepšila vzhled a funkcionalitu formulářů.",
           "Práce byly prováděny na frontendu (celkové zlepšení UI/UX), backendu a na schématu databáze. V rámci projektu byl proveden sběr a analýza požadavků (ER konceptuální model), návrh (Figma), programování (viz níže) a testování (SuperTest, Chai, Mocha, testování použitelnosti)."
         ],
-        "technologies": ["TYPESCRIPT", "NEXT.JS", "PRISMA", "POSTGRESQL", "HTML", "CSS", "FIGMA"]
+        "technologies": ["TYPESCRIPT", "NEXT.JS", "PRISMA", "POSTGRESQL", "HTML", "CSS", "FIGMA"],
+        "time": "leden - červen 2024"
       }
     },
     "asciiart": {
@@ -67,7 +68,8 @@
           "Projekt je především zaměřen na správné dodržování OOP principů a testování všech částí aplikace. Hlavní snahou při psaní tohoto programu je modulárnost jednotlivých částí a dodržování GRASP vysoké soudržnosti a nízké provázanosti. Složky projektu jsou uspořádany do přeheldné struktury.",
           "Program je možné spustit v sbt shellu. Při spuštění je možnost přidat argumenty pro napříkald změnu konverzní tabulky, přidání filtrů (obrácení přes osu, světlost), místo uložení. Převodník funguje tak, že dodaný obrázek převede na černobílou verzi a poté každému pixelu přiřadí hodnotu podle tabulky převodu."
         ],
-        "technologies": ["SCALA", "MOCKITO"]
+        "technologies": ["SCALA", "MOCKITO"],
+        "time": "září 2023"
       }
     },
     "java": {
@@ -79,7 +81,8 @@
           "V projektu je udržovaná třívrstvá architektura. Aplikace se především orientuje na správně napsaný backend. Konkrétně se zde například využívá vzor Controller-Service-Repository. Pro ukládání dat se používá Postgresová databáze. V databázi jsou uloženy pouze 3 tabulky, ale jsou mezi nimi demonstrovány všechny typy vazeb podle kardinality (1:1, 1:N, M:N).",
           "Frontend je napsaný ve frameworku Vue.js. Frontend byl pro aplikaci až druhotný. Kód by potřeboval refaktorizaci, ale pro potřeby projektu je dostatečně funkční a přehledný."
         ],
-        "technologies": ["JAVA", "POSTGRESQL", "VUE.JS"]
+        "technologies": ["JAVA", "POSTGRESQL", "VUE.JS"],
+        "time": "srpen - září 2023"
       }
     }
   },
@@ -124,6 +127,85 @@
     {
       "header": "Jazyky",
       "list": ["Angličtina | plně profesionální znalost", "Čeština | rodilá mluvčí"]
+    }
+  ],
+
+  "educationPage": [
+    {
+      "schoolName": "ČVUT FIT",
+      "time": "2024 - 2026?",
+      "description": "Magisterské studium v oboru Softwarové inženýrství",
+      "adittional": "Zatím nedokončeno",
+      "details": {
+        "label": "Magisterské studium",
+        "paragraphs": []
+      }
+    },
+    {
+      "schoolName": "ČVUT FIT",
+      "time": "2021 - 2024",
+      "description": "Bakalářské studium v oboru Softwarové inženýrství",
+      "adittional": "Ukončeno s vyznamenáním",
+      "details": {
+        "label": "Bakalářské studium",
+        "paragraphs": [""],
+        "semesters": [
+          {
+            "label": "1. semestr",
+            "content": ["C", "Linux OS", "Skriptování v shellu", "Git"]
+          },
+          {
+            "label": "2. semestr",
+            "content": ["C++", "OOP design", "SQL databáze (Oracle, PostgreSQL)", "Assembler"]
+          },
+          {
+            "label": "3. semestr",
+            "content": ["DevOps", "Java", "Spring Boot", "Lambda kalkulus", "Prolog"]
+          },
+          {
+            "label": "4. semestr",
+            "content": [
+              "Kryptografie",
+              "Vícevláknové programování v C/C++",
+              "SW týmový projekt",
+              "UML modelování"
+            ]
+          },
+          {
+            "label": "5. semestr",
+            "content": [
+              "R",
+              "Scala",
+              "ALgoritmy a datové struktury",
+              "Konceptuální modelování (OntoUML, BPMN, DEMO)"
+            ]
+          },
+          {
+            "label": "6. semestr",
+            "content": ["Bakalářská práce (TypeScript, Next.js)", "Latex"]
+          }
+        ]
+      }
+    },
+    {
+      "schoolName": "Lidová konzervatoř a Múzická škola Ostrava",
+      "time": "2018 - 2021",
+      "description": "Výtvarný obor se zaměřením kresba, malba",
+      "adittional": "Úspěšně ukončeno",
+      "details": {
+        "label": "Studium na konzervatoři",
+        "paragraphs": []
+      }
+    },
+    {
+      "schoolName": "Gymnázium Ostrava-Hrabůvka",
+      "time": "2017 - 2021",
+      "description": "Všeobecné zaměření",
+      "adittional": "Ukončeno s vyznamenáním",
+      "details": {
+        "label": "Studium na gymnázium",
+        "paragraphs": []
+      }
     }
   ]
 }
