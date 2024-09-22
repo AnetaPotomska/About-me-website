@@ -1,4 +1,9 @@
 {
+  "notFound": {
+    "label": "Stránka nenalezna",
+    "goBack": "Jít zpátky"
+  },
+
   "toast": {
     "email": {
       "success": "Email úspešně odeslán",

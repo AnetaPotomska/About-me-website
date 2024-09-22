@@ -1,8 +1,7 @@
 'use client'
 
-import Link from 'next/link'
-import { EmailIcon } from '../icons/EmailIcon'
 import { useFormStatus } from 'react-dom'
+import { EmailIcon } from '../icons/EmailIcon'
 
 interface SubmitButtonProps {
   label: string

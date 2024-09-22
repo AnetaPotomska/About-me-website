@@ -1,4 +1,9 @@
 {
+  "notFound": {
+    "label": "Page not found",
+    "goBack": "Go back"
+  },
+
   "toast": {
     "email": {
       "success": "Email send successfully",

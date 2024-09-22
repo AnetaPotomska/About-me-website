@@ -110,6 +110,7 @@ textarea::placeholder {
 .web-form-select:hover,
 .web-form-select:active,
 .web-form-select:focus {
+  outline: none;
   background-color: var(--color-accent);
   color: var(--color-text);
   font: var(--font-link);
@@ -871,7 +872,6 @@ hr.divider {
 .web-form {
   display: flex;
   flex-direction: column;
-  gap: var(--size-small-gap);
 }
 
 .form-control,
@@ -905,7 +905,7 @@ hr.divider {
   color: var(--color-text) !important;
 }
 
-/* Buttons icons */
+/* Buttons icons -------------------------------------------------------------------------  */
 
 .web-btn .icon {
   height: var(--size-small-icon);
@@ -931,4 +931,32 @@ hr.divider {
 
 .web-btn-primary:hover .icon {
   fill: var(--color-text);
+}
+
+/* Not found ------------------------------------------------------------------------- */
+
+.not-found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--size-gap);
+  min-height: 100vh;
+}
+
+.vertical-line {
+  border-left: 6px solid var(--color-secondary);
+  border-radius: var(--size-small-border-radius);
+  height: 30vh;
+}
+
+@media (max-width: 576px) {
+  .vertical-line {
+    height: 0;
+    border-left: 0;
+    width: 50vw;
+    border-bottom: 6px solid var(--color-secondary);
+  }
+  .not-found {
+    flex-direction: column;
+  }
 }
