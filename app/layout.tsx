@@ -28,7 +28,14 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
     <html lang={locale}>
       <body className={'theme-container d-flex flex-column min-vh-100 ' + roboto.variable}>
         <ThemeProvider>
-          <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
+          <NextIntlClientProvider
+            messages={messages}
+            timeZone="Europe/Prague"
+            now={new Date()}
+            locale={locale}
+          >
+            {children}
+          </NextIntlClientProvider>
           <BootstrapClient />
         </ThemeProvider>
       </body>

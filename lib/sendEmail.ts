@@ -26,7 +26,7 @@ export const sendEmail = async (formData: FormData) => {
       error: t('email.failure.message'),
     }
   }
-  
+
   let data
   try {
     data = await resend.emails.send({
@@ -37,7 +37,7 @@ export const sendEmail = async (formData: FormData) => {
       react: React.createElement(ContactFormEmail, {
         message: message as string,
         senderEmail: senderEmail as string,
-        locale: locale
+        locale: locale,
       }),
     })
   } catch (error: unknown) {

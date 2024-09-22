@@ -342,9 +342,8 @@ button.web-btn {
 }
 
 .web-btn:disabled.web-btn-primary:hover {
-  background-color: var(--color-primary)
+  background-color: var(--color-primary);
 }
-
 
 .web-btn:disabled.web-btn-primary .icon {
   fill: var(--color-background);
@@ -905,7 +904,6 @@ hr.divider {
   background-color: var(--color-background) !important;
   color: var(--color-text) !important;
 }
-
 
 /* Buttons icons */
 
