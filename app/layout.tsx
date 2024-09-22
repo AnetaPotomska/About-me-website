@@ -5,7 +5,7 @@ import { Roboto } from 'next/font/google'
 import { ThemeProvider } from '@/components/theme/ThemeProvider'
 import BootstrapClient from '@/components/BootstrapClient'
 import { NextIntlClientProvider } from 'next-intl'
-import { getLocale, getMessages } from 'next-intl/server'
+import { getLocale, getMessages, getTranslations } from 'next-intl/server'
 
 const roboto = Roboto({
   weight: '400',
@@ -13,11 +13,17 @@ const roboto = Roboto({
   variable: '--ff',
 })
 
-export const metadata: Metadata = {
-  title: 'Aneta Potomská',
-  icons: {
-    icon: '/favicon.ico',
-  },
+export async function generateMetadata() {
+  const locale = await getLocale()
+  const t = await getTranslations({ locale, namespace: 'metadata' })
+
+  return {
+    title: t('home.title'),
+    description: t('home.description'),
+    icons: {
+      icon: '/favicon.ico',
+    },
+  }
 }
 
 export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

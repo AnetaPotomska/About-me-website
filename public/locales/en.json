@@ -1,4 +1,31 @@
 {
+  "metadata": {
+    "home": {
+      "title": "Aneta Potomská",
+      "description": "This is the portfolio of Aneta Potomská, a recent graduate of the bachelor's degree from the CTU FIT. The page contains chapters about skills, education, projects and contact information."
+    },
+    "about": {
+      "title": "About",
+      "description": "A short summary of who I am. The page includes chapters on school and hobbies."
+    },
+    "projects": {
+      "title": "Projects",
+      "description": "Most software projects are mentioned here. There are mentions of web development projects and small programs."
+    },
+    "skills": {
+      "title": "Skills",
+      "description": "It includes a list of skills such as programming, frameworks, tools, passes and languages."
+    },
+    "education": {
+      "title": "Education",
+      "description": "Timeline of educational attainment to date. Mentioned are studies at gymnasium, people's conservatory and CTU FIT."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "A page containing an email contact form."
+    }
+  },
+
   "notFound": {
     "label": "Page not found",
     "goBack": "Go back"

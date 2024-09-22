@@ -944,7 +944,7 @@ hr.divider {
 }
 
 .vertical-line {
-  border-left: 6px solid var(--color-secondary);
+  border-left: var(--size-medium-border) solid var(--color-secondary);
   border-radius: var(--size-small-border-radius);
   height: 30vh;
 }
@@ -954,7 +954,7 @@ hr.divider {
     height: 0;
     border-left: 0;
     width: 50vw;
-    border-bottom: 6px solid var(--color-secondary);
+    border-bottom: var(--size-medium-border) solid var(--color-secondary);
   }
   .not-found {
     flex-direction: column;

@@ -1,4 +1,31 @@
 {
+  "metadata": {
+    "home": {
+      "title": "Aneta Potomská",
+      "description": "Jedná se o portfolio Anety Potomské, čerstvé absolventky bakalářského studia z ČVUT FIT. Stránka obsahuje kapitoly o dovednostech, vzdělání, projektech a také kontakt."
+    },
+    "about": {
+      "title": "O mně",
+      "description": "Krátké shrnutí o tom, kdo jsem. Stránka obsahuje kapitoly o škole a zálibách."
+    },
+    "projects": {
+      "title": "Projekty",
+      "description": "Zde je zmíněna většina softwarových projektů. Existují zde zmínky o projektech o vytváření webů a drobných programů."
+    },
+    "skills": {
+      "title": "Dovednosti",
+      "description": "Obsahuje list dovedností jako jsou programování, frameworky, nástroje, průkazy a jazyky."
+    },
+    "education": {
+      "title": "Vzdělání",
+      "description": "Časová osa o dosavadním dosaženém vzdělání. Zmíněné je studium na gymnáziu, lidové konzervatoři a ČVUT FIT."
+    },
+    "contact": {
+      "title": "Kontakt",
+      "description": "Stránka obsahující emailový formulář pro možnost kontaktování."
+    }
+  },
+
   "notFound": {
     "label": "Stránka nenalezna",
     "goBack": "Jít zpátky"
