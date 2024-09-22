@@ -12,27 +12,22 @@ export default function WebLayout({ children }: Readonly<{ children: React.React
           {
             path: '/about',
             name: t('about'),
-            icon: '',
           },
           {
             path: '/projects',
             name: t('projects'),
-            icon: '',
           },
           {
             path: '/skills',
             name: t('skills'),
-            icon: '',
           },
           {
             path: '/education',
             name: t('education'),
-            icon: '',
           },
           {
             path: '/contact',
             name: t('contact'),
-            icon: '',
           },
         ]}
       />

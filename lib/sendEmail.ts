@@ -7,12 +7,11 @@ import { ContactFormEmail } from '@/components/contact/ContactFormEmail'
 
 const resend = new Resend(process.env.RESEND_API_KEY)
 
-const email = process.env.EMAIL || 'aneta.potomska@seznam.cz'
+const email = process.env.EMAIL || ''
 
 export const sendEmail = async (formData: FormData) => {
   const senderEmail = formData.get('email')
   const message = formData.get('message')
-  console.log(formData)
   if (!validateString(senderEmail, 200)) {
     return {
       error: 'Invalid sender email',
@@ -23,7 +22,6 @@ export const sendEmail = async (formData: FormData) => {
       error: 'Invalid sender email',
     }
   }
-  console.log(formData)
   let data
   try {
     data = await resend.emails.send({
@@ -41,7 +39,6 @@ export const sendEmail = async (formData: FormData) => {
       error: getErrorMessage(error),
     }
   }
-  console.log(data)
   return {
     data,
   }

@@ -45,6 +45,19 @@
   },
 
   "projects": {
+    "portfolio": {
+      "label": "Portfolio",
+      "content": "Website containing basic information about me.",
+      "imgAlt": "Úvodní stránka mého portfolia",
+      "details": {
+        "paragraphs": [
+          "I created my own website for myself, the very one you are on now. This is actually the first website I've created from scratch (before, I was always taking over a project that was already in progress). First, I created a design in Figma. For the color palette I used the coolors and realtimecolors websites.",
+          "The actual code was written in the already known to me Next.js. I tried to learn how to write most of the functionality myself. So while I use Bootstrap in the app, I tend to rely more often on CSS written by me. Probably the hardest part was learning how to make the language and color theme selection work. I used the next-intl library to change the language."
+        ],
+        "technologies": ["TYPESCRIPT", "NEXT.JS", "HTML", "CSS", "FIGMA"],
+        "time": "august - september 2024"
+      }
+    },
     "summerjob": {
       "label": "SummerJob",
       "content": "As part of my bachelor's thesis for the volunteer brigade SummerJob I undertook the development of a website to manage the event.",
@@ -84,13 +97,42 @@
         "technologies": ["JAVA", "POSTGRESQL", "VUE.JS"],
         "time": "august - september 2023"
       }
+    },
+    "bomberman": {
+      "label": "Game Bomberman",
+      "content": "A terminal executable game based on the popular Bomberman game.",
+      "imgAlt": "Level for 4 players",
+      "details": {
+        "paragraphs": [
+          "The project is loosely inspired by Bomberman, where the main goal is to plant bombs, destroy crates and enemies. Players take turns in their turns, so it is a turn-based game. In his turn, the player can do one of the following: move, plant a bomb or use a detonator.",
+          "The game is executable in the terminal. It allows 2 to 4 players to play. Respectively, there are two modes in the game, HUMAN vs HUMAN and HUMAN vs PC, where in the first mode 2 players play against each other on one keyboard and in the second one player plays against up to three AIs. Two AIs have been written for the game, one optimizes for getting the highest score and the other focuses primarily on breaking crates. Basically, they work according to a shortest path finding algorithm.",
+          "The game is partially modifiable through configuration files. In doing so, the user can add new levels, modify the controls, the chances of hitting bonuses from smashed crates, the point distribution system and the initial stats of each player. It was necessary to demonstrate the use of polymorphism in the project. This occurs within the player controls and the modification of bonus effects."
+        ],
+        "technologies": ["C++", "NCURSES"],
+        "time": "april - may 2023"
+      }
+    },
+    "vue": {
+      "label": "Team project",
+      "content": "As part of a 6-member team, we further developed a frontend written in Vue.js. My role was mainly creating designs in Figma.",
+      "imgAlt": "Technologies used in the team project",
+      "details": {
+        "paragraphs": [
+          "During two semesters of my bachelor's degree, we worked with a team of 6 to further develop a frontend written in Vue.js for a Jagu company. Because of the NDA I signed with this company, I will be focusing on the aspects of working in a team and my role in it.",
+          "We had a team leader in the team who made sure that deadlines were met (we had about 5 iterations each semester). We reassigned tasks to the rest of the team based on agreement with the team and the instructor. We used Redmine to keep track of assignments. At the same time, we used Redmine to maintain a wiki where we each wrote articles. In addition to the articles on commissioning, diagrams, and assignments, I wrote a tutorial on how to use Figma for the other teams that would work on the project after us.",
+          "My first semester on the team was mainly focused on creating designs in Figma and creatin OntoUML diagrams in Enterprise Architect. In Figma, I created reusable components, design layouts and functionality, and executable prototypes. In Enterprise Architect, I created an activity diagram, a domain model, and a state model.",
+          "In the second semester, we migrated from Vue 2 to Vue 3. After that, I went through the entire web application, and based on that, I created tasks for the team. I personally fixed a good number of bugs."
+        ],
+        "technologies": ["VUE.JS", "TYPESCRIPT", "FIGMA", "ENTERPRISE ARCHITECT"],
+        "time": "february - september 2023"
+      }
     }
   },
 
   "aboutPage": {
     "education": {
       "paragraphs": [
-        "I am Aneta Potomská, a recent graduate (2024) of the Bachelor's degree in Computer Science specializing in Software Engineering from FIT CTU. For the last three years, this school has been my main focus and what set me on my future career in software development. I had minimal experience prior to this school, so I dedicated my years in college to intensive self-improvement.",
+        "I am Aneta Potomská, a recent graduate (2024) of the Bachelor's programme in Computer Science specializing in Software Engineering from FIT CTU. For the last three years, this school has been my main focus and what set me on my future career in software development. I had minimal experience prior to this school, so I dedicated my years in college to intensive self-improvement.",
         "After getting my red diploma, I can now say that my efforts have paid off. While school has forced me to work on a lot of different projects, it's only now that I feel truly ready to work on something bigger - whether it's my personal projects like this website or my work at my job."
       ],
       "imgAlt": "Logo FIT CTU",
@@ -138,7 +180,9 @@
       "adittional": "Not yet completed",
       "details": {
         "label": "Master's studies",
-        "paragraphs": []
+        "paragraphs": [
+          "This study is still too fresh for me to write about it in detail. Anyway, I hope that it will meet my expectations just like the Bachelor's studies. I expect to complete my studies in the standard time of two years, in 2026."
+        ]
       }
     },
     {
@@ -148,7 +192,10 @@
       "adittional": "Graduated with honours",
       "details": {
         "label": "Bachelor's studies",
-        "paragraphs": [""],
+        "paragraphs": [
+          "Here I learned all the basics that I could build on. As a school, FIT encourages students to study on their own, which is inevitable in such a broad field. The school had well-designed materials and, if I may say so, logically put together study programs.",
+          "I learned to work in programming languages such as C/C++, Java, Scala, as well as in such obscure languages as Lambda Calculus or Prolog. In fact, this was the focus of my semesters at the faculty:"
+        ],
         "semesters": [
           {
             "label": "1st semester",
@@ -194,7 +241,10 @@
       "adittional": "Successfully finished",
       "details": {
         "label": "Study at the conservatory",
-        "paragraphs": []
+        "paragraphs": [
+          "I have always enjoyed drawing and unfortunately I didn't have any subjects on the subject in high school. That's why I started attending classes once a week at the People's Conservatory. I learned how to work with different media - pencil, pastel, tempera, aquarelle, water colours, ink. I also learned concepts such as perspective, color theory, and human proportions.",
+          "While this knowledge may not seem essential to the programming profession, many times I find it useful to think in a creative way that complements the otherwise analytical part."
+        ]
       }
     },
     {
@@ -204,7 +254,10 @@
       "adittional": "Graduated with honours",
       "details": {
         "label": "Study at the gymnasium",
-        "paragraphs": []
+        "paragraphs": [
+          "In Ostrava I graduated from a gymnasium with a general orientation, and its curriculum was intended more for a natural science gymnasium. I went to the gymnasium with a clear goal, and that was to study medicine at university. I left that thought at the last minute.",
+          "However, I can't say I took anything away from school. I learned how to teach, how to write out protocols and how to give presentations. From school, I fondly remember the team project for the JA Student Company of the Year competition. Back then, we created a board game called Eco-City that was designed to both entertain and educate players about environmental issues. I created all the graphic designs for the game. With the team we won the national round of this competition."
+        ]
       }
     }
   ],

@@ -45,6 +45,19 @@
   },
 
   "projects": {
+    "portfolio": {
+      "label": "Portfolio",
+      "content": "Webová stránka obsahující základní informace o mě.",
+      "imgAlt": "Úvodní stránka mého portfolia",
+      "details": {
+        "paragraphs": [
+          "Vytvořila jsem si pro sebe vlastní webovou stránku, přesně tu na které se teď nacházíte. Jedná se vlastně o první webovou stránku, kterou jsem tvořila od úplného začátku (tím, že jsem předtím, vždy přebírala už nějak vyvtořený projekt). Nejdříve jsem si vytvořila návrh ve Figmě. Pro barevnou paletu jsem použila webové stránky coolors a realtimecolors.",
+          "Samotný kód jsme psala v již pro mě známém Next.js. Snažila jsem se naučit psát si většinu funkcionalit sama. Takže sice v aplikaci využívám Bootstrap, ale spíše častěji se spoléhám na mnou napsaná CSS. Asi nejobtížnější bylo se naučit, jak zprovoznit výběr jazyka a barevného motivu. Pro změnu jazyka jsem využila knihovnu next-intl."
+        ],
+        "technologies": ["TYPESCRIPT", "NEXT.JS", "HTML", "CSS", "FIGMA"],
+        "time": "srpen - září 2024"
+      }
+    },
     "summerjob": {
       "label": "SummerJob",
       "content": "V rámci své bakalářské práce jsem pro dobrovolnickou brigádu SummerJob provedla rozvoj webové stránky pro správu akce.",
@@ -83,6 +96,35 @@
         ],
         "technologies": ["JAVA", "POSTGRESQL", "VUE.JS"],
         "time": "srpen - září 2023"
+      }
+    },
+    "bomberman": {
+      "label": "Hra Bomberman",
+      "content": "Hra spustitelná v terminálu na motivy oblíbené hry Bomberman.",
+      "imgAlt": "Level pro 4 hráče",
+      "details": {
+        "paragraphs": [
+          "Projekt je volně inspirovaný hrou Bomberman, kde je hlavním cílem pokládat bomby, ničit bedny a nepřátele. Hráči se střídají ve svých tazích, jedná se tedy o hru s tahovým režimem. Ve svém tahu hráč může udělat jednu z následujícího: pohnout se, položit bombu nebo použít detonátor.",
+          "Hra je spustitelná v terminálu. Dovoluje hrát 2 až 4 hráčům. Respektive jsou ve hře dva režimy HUMAN vs HUMAN a HUMAN vs PC, kdy v prvním režimu hrají proti sobě 2 hráči na jedné klávesnici a v druhém hraje jeden hráč proti až třem umělým inteligencím. Pro hru byly napsány dvě AI, jeden optimalizuje na získání, co největšího skóre a druhý se především soustředí na rozbití beden. V základu fungují podle algoritmu pro hledání nejkratší cesty.",
+          "Hra je částečně modifikovatelná prostřednictvím konfiguračních souborů. Přičemž si takto uživatel může přidat nové levely, upravit ovládání, šance na padnutí bonusů z rozbiitých beden, systém rozdělování bodů a počáteční statistiky každého hráče. V projektu bylo nutné demonstrovat použití polymorfismu. Ten se vyskytuje v rámci ovládání hráčů a úpravy efektů bonusů."
+        ],
+        "technologies": ["C++", "NCURSES"],
+        "time": "duben - květen 2023"
+      }
+    },
+    "vue": {
+      "label": "Týmový projekt",
+      "content": "V rámci 6 členného týmu jsme upravovali frontend napsaný ve Vue.js. Moje role byla především vytváření návrhů ve Figmě.",
+      "imgAlt": "Použité technologie v týmovém projektu",
+      "details": {
+        "paragraphs": [
+          "V rámci dvou semestrů na bakalářském studiu jsme s 6 členným týmem upravovali frontend napsaný ve Vue.js do projektu společnosti Jagu. Kvůli podepsanému NDA s touto firmou se budu soustředit na aspekty práce v týmu a mé role v něm.",
+          "V týmu jsme měli týmového vedoucího, který dohlížel na dodržování termínů (v každém semestru jsme měli asi kolem 5 iterací). Zbytek týmu jsme si přerozdělovali úkoly na základě dohody s týmem a vyučujícím. Pro evidenci úkolů jsme používali Redmine. Současně jsme Redmine používali pro udržování wiki, kde jsme každý psali články. Kromě článků k zprovoznění, diagramům a úkolům jsem sepsala tutoriál na používání Figmy pro další týmy, kteří budou na projektu pracovat po nás.",
+          "Já jsem se v týmu v prvním semestru především soustředila na vytváření návrhů ve Figmě a vyvtáření OntoUML schémat v programu Enterprise Architect. Ve figmě jsem vytvořila znovupoužitelné komponenty, návrhy vzhledu a funkcionalit a spustitelné prototypy. V Enterprise Architect jsem vytvořila diagram aktivit, doménový model a stavový model.",
+          "V druhém semestru jsme migrovali z Vue 2 na Vue 3. Po tomto jsem prošla celou webovou aplikaci, na základě čehož jsem pro tým vytvořila úkoly. Já jsem osobně opravila nemalý počet chyb."
+        ],
+        "technologies": ["VUE.JS", "TYPESCRIPT", "FIGMA", "ENTERPRISE ARCHITECT"],
+        "time": "únor - listopad 2023"
       }
     }
   },
@@ -138,7 +180,9 @@
       "adittional": "Zatím nedokončeno",
       "details": {
         "label": "Magisterské studium",
-        "paragraphs": []
+        "paragraphs": [
+          "Toto studium je pro mě stále příliš čerstvé na to, abych mohla o něm blíže napsat. Každopádně doufám, že naplní má očekávání stejně jako bakalářské studium. Očekávám, že studia dokončím ve standartní době dvou let, tedy v roce 2026."
+        ]
       }
     },
     {
@@ -148,7 +192,10 @@
       "adittional": "Ukončeno s vyznamenáním",
       "details": {
         "label": "Bakalářské studium",
-        "paragraphs": [""],
+        "paragraphs": [
+          "Zde jsem se naučila veškeré základy, na kterých jsem mohla dále stavět. FIT jako škola studenty vyloženě vybízí k samostudiu, které je prostě u takto obsáhlého oboru nevyhnutelné. Škola měla pro nás skvěle vytvořené materiály a mohu-li říct i logicky poskládané studijní programy.",
+          "Naučila jsem se zde pracovat v programovacích jazycích jako je C/C++, Java, Scala, ale i v tak obskurních jazycích jako je Lambda kalkulus nebo Prolog. Konrkténě toto byla náplň mých semestrů na fakultě:"
+        ],
         "semesters": [
           {
             "label": "1. semestr",
@@ -194,7 +241,10 @@
       "adittional": "Úspěšně ukončeno",
       "details": {
         "label": "Studium na konzervatoři",
-        "paragraphs": []
+        "paragraphs": [
+          "Kreslení mě vždy bavilo a na gymnázium jsem bohužel neměla na toto téma žádný předmět. Proto jsem začala jednou týdně docházet na hodiny do lidové konzervatoře. Naučila jsem se práce s různými médii - s tužkou, pastelem, temperami, akvaralem, vodovými barvami, inkoustem. Také jsem se naučila koncepty jako je perspektiva, teorii barev a lidské proporce.",
+          "I když se tyto znalosti nemusí zdát podstatné pro profesi programátorky, tak se mi kolikrát hodí kreativní způsob přemýšlení, které doplňuje jinak analytickou část."
+        ]
       }
     },
     {
@@ -204,7 +254,10 @@
       "adittional": "Ukončeno s vyznamenáním",
       "details": {
         "label": "Studium na gymnázium",
-        "paragraphs": []
+        "paragraphs": [
+          "V Ostravě jsem vystudovala gymnázium s všeobecným zaměřením, přičemž jeho osnovy byly spíše myšleny pro přírodovědné gymnázium. Na gymnázium jsem šla s jasným cílem a to, že jsem chtěla studovat na vysoké škole lékařství. Od toho jsem na poslední chvíli opustila.",
+          "Nemůžu však říct, že bych si ze školy nic neodnesla. Naučila jsem se učit, vyprácovávat protokoly a prezentovat. Ze školy ráda vzpomínám na týmový projekt pro soutěž JA Studentská firma roku. Tehdy jsme vytvořili deskovou hru Eco-City, která měla za úkol jak zabavit, tak i vzdělat hráče o otázkách ekologie. Já jsem pro hru vytvořila všechny grafické designy. S týmem jsme vyhráli národní kolo této soutěže."
+        ]
       }
     }
   ],

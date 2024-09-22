@@ -88,6 +88,22 @@ small {
   font: var(--font-small);
 }
 
+input,
+textarea {
+  color: var(--color-text);
+}
+
+textarea:focus,
+input:focus {
+  color: var(--color-text) !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--color-text) !important;
+  opacity: 0.75 !important;
+}
+
 /* Select ------------------------------------------------------------------------- */
 
 .web-form-select,
@@ -126,6 +142,7 @@ small {
 }
 
 .nav-link.active,
+.nav-link.active:link,
 .nav-link.active:visited,
 .nav-link.active:focus {
   color: var(--color-primary);
@@ -135,6 +152,7 @@ small {
 }
 
 .nav-link.active:before,
+.nav-link.active:link::before,
 .nav-link.active:visited:before,
 .nav-link.active:focus:before {
   content: '';
@@ -387,9 +405,15 @@ button.web-btn {
   width: 100%;
   height: auto;
   border-radius: var(--size-small-border-radius);
-  min-width: min(100%, 300px) !important;
+  min-width: 300px;
   max-width: clamp(30vw, 400px, 50vw);
   position: relative;
+}
+
+@media (max-width: 576px) {
+  .image-content .web-img {
+    min-width: 200px;
+  }
 }
 
 .image-content {
@@ -404,7 +428,7 @@ button.web-btn {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: var(--size-gap);
+  gap: var(--size-big-gap) var(--size-gap);
   flex-wrap: wrap;
 }
 
@@ -441,12 +465,16 @@ button.web-btn {
   overflow-y: auto;
 }
 
+.project-card .project-content-footer .image-content {
+  position: relative;
+  height: min(175px, 40vw);
+}
+
 .project-image {
   width: 100%;
-  height: auto;
+  height: fit-content;
   border-radius: var(--size-small-border-radius);
   min-width: 100px;
-  max-width: clamp(15vw, 50vw, 75vw);
   position: relative;
   cursor: pointer;
 }
@@ -484,8 +512,12 @@ button.web-btn {
 .project-detail-footer {
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: var(--size-gap);
+}
+
+.project-detail-footer .pill-group {
+  justify-content: end;
 }
 
 /* pill ------------------------------------------------------------------------- */
@@ -585,26 +617,53 @@ hr.divider {
 }
 
 .skill-card {
-  grid-column: auto;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--size-small-gap) var(--size-gap);
-  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+.skill-card h2 {
+  flex: 1 0 auto;
 }
 
 .skill-card .pill-group {
-  max-width: 50vw;
+  flex: 1 0 auto;
+}
+
+.skill-card .dots {
+  flex: 0 1 auto;
+  margin: 0 var(--size-small-gap);
+  overflow: hidden;
+  font: var(--font-p);
+}
+
+.dots::before {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+  content: '. . . . . . . . . . . . . . . . . . . . ' '. . . . . . . . . . . . . . . . . . . . '
+    '. . . . . . . . . . . . . . . . . . . . ' '. . . . . . . . . . . . . . . . . . . . '
+    '. . . . . . . . . . . . . . . . . . . . ' '. . . . . . . . . . . . . . . . . . . . ';
+}
+
+.skill-card .pill-group {
   justify-content: end;
+  flex-wrap: wrap;
+  max-width: 50vw;
 }
 
 @media (max-width: 768px) {
+  .dots::before {
+    content: '';
+  }
+
   .skill-card-group {
     gap: var(--size-big-gap);
   }
 
   .skill-card {
     flex-direction: column;
+    align-items: center;
   }
 
   .skill-card .pill-group {
@@ -629,23 +688,6 @@ hr.divider {
 }
 
 /* Education ------------------------------------------------------------------------- */
-/*
-.education-card {
-  border-radius: var(--size-small-border-radius);
-  border: var(--size-medium-border) solid var(--color-primary);
-}
-
-.education-card:nth-of-type(even) {
-  border: var(--size-medium-border) solid var(--color-secondary);
-}
-
-.education-card-content {
-  display: flex;
-  flex-direction: column;
-  padding: 36px;
-}
-
-*/
 
 .education-card-group {
   position: relative;
@@ -684,14 +726,7 @@ hr.divider {
   position: relative;
   border-radius: var(--size-small-border-radius);
   color: var(--color-text);
-}
-
-.education-card:nth-of-type(even) .education-card-content {
   border: var(--size-medium-border) solid var(--color-primary);
-}
-
-.education-card:nth-of-type(odd) .education-card-content {
-  border: var(--size-medium-border) solid var(--color-secondary);
 }
 
 .dot {
@@ -724,7 +759,7 @@ hr.divider {
   top: 30px;
   border-top: calc(var(--size-big-icon) / (2)) solid transparent;
   border-bottom: calc(var(--size-big-icon) / (2)) solid transparent;
-  border-left: calc(var(--size-big-icon) / (2)) solid var(--color-secondary);
+  border-left: calc(var(--size-big-icon) / (2)) solid var(--color-primary);
   right: calc(var(--size-big-icon) / (-2));
 }
 
@@ -763,12 +798,8 @@ hr.divider {
     left: -25px !important;
   }
 
-  .education-card:nth-of-type(even) .arrow {
+  .education-card .arrow {
     border-right: calc(var(--size-big-icon) / (2)) solid var(--color-primary);
-  }
-
-  .education-card:nth-of-type(odd) .arrow {
-    border-right: calc(var(--size-big-icon) / (2)) solid var(--color-secondary);
   }
 }
 
@@ -786,22 +817,15 @@ hr.divider {
 .education-card .education-footer .icon {
   height: var(--size-small-icon);
   width: auto;
-}
-
-.education-card:nth-of-type(odd) .education-footer .icon {
   fill: var(--color-secondary);
 }
 
-.education-card:nth-of-type(even) .education-footer .icon {
+.education-card .education-footer .icon:hover {
   fill: var(--color-primary);
 }
 
-.education-card:nth-of-type(odd) .education-footer .icon:hover {
-  fill: var(--color-primary);
-}
-
-.education-card:nth-of-type(even) .education-footer .icon:hover {
-  fill: var(--color-secondary);
+.education-card small {
+  color: var(--color-secondary);
 }
 
 .semester-group {
@@ -856,13 +880,13 @@ hr.divider {
 .form-control:active {
   outline: none;
   box-shadow: none;
-  border: none;
-  background-color: var(--color-accent);
+  background-color: var(--color-background);
+  border: var(--size-small-border) solid var(--color-secondary);
 }
 
 .form-control {
   color: var(--color-text);
-  border-bottom: var(--size-medium-border) solid var(--color-background);
+  border-bottom: var(--size-medium-border) solid var(--color-secondary);
 }
 
 .form-control:active,

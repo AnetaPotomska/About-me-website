@@ -1,7 +1,12 @@
-import type { Metadata } from 'next'
+import { getLocale, getTranslations } from 'next-intl/server'
 
-export const metadata: Metadata = {
-  title: 'Projekty',
+export async function generateMetadata() {
+  const locale = await getLocale()
+  const t = await getTranslations({ locale, namespace: 'navPaths' })
+
+  return {
+    title: t('projects'),
+  }
 }
 
 export default function ProjectsLayout({ children }: Readonly<{ children: React.ReactNode }>) {

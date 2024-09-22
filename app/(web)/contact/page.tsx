@@ -5,7 +5,7 @@ import Link from 'next/link'
 export default function Contact() {
   const t = useTranslations('contactMePage')
 
-  const email = process.env.EMAIL || 'aneta.potomska@seznam.cz'
+  const email = process.env.EMAIL
 
   return (
     <>

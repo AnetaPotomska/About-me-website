@@ -12,14 +12,14 @@ export const EducationDetailModal = ({ content, onClose }: EducationDetailModalP
     <Modal onClose={onClose} title={content.label}>
       <div className="project-detail-modal-content">
         <div className="paragraph">
-          {content.paragraphs.map((paragraph: string) => (
-            <p>{paragraph}</p>
+          {content.paragraphs.map((paragraph: string, index) => (
+            <p key={index + 'paragraph'}>{paragraph}</p>
           ))}
         </div>
         {content.semesters && (
           <div className="semester-group">
             {content.semesters.map((semester: Semester, index) => (
-              <div key={index} className="semester">
+              <div key={index + 'semester'} className="semester">
                 <div>
                   <p>{semester.label}</p>
                 </div>

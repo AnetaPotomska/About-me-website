@@ -5,11 +5,12 @@ import { LinkedinFooter } from './LinkedinFooter'
 
 export const Footer = () => {
   const t = useTranslations('footer')
+  const email = process.env.EMAIL
   return (
     <>
       <footer className="pb-4 mt-auto text-center">
         <div className="d-flex align-items-center justify-content-center gap-4 mb-4">
-          <EmailFooter label={t('icons.email')} />
+          <EmailFooter label={t('icons.email')} email={email ?? ''} />
           <LinkedinFooter label={t('icons.linkedin')} />
           <GithubFooter label={t('icons.github')} href="https://github.com/AnetaPotomska" />
         </div>

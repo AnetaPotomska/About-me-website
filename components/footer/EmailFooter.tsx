@@ -5,11 +5,10 @@ import { EmailIcon } from '../icons/EmailIcon'
 
 interface EmailFooterProps {
   label: string
+  email: string
 }
 
-export const EmailFooter = ({ label }: EmailFooterProps) => {
-  const email = process.env.EMAIL || 'aneta.potomska@seznam.cz'
-
+export const EmailFooter = ({ label, email }: EmailFooterProps) => {
   return (
     <>
       <Link title={label} aria-label={label} href={`mailto:${email}`} target="_blank">

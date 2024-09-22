@@ -25,13 +25,13 @@ export const Navbar = ({ navPaths }: NavbarProps) => {
 
   const menuRef = useRef<HTMLInputElement>(null)
 
-  const handleClickOutside = (event: MouseEvent) => {
-    if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
-      closeMenu()
-    }
-  }
-
   useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        closeMenu()
+      }
+    }
+
     if (isMenuOpen) {
       document.addEventListener('click', handleClickOutside)
     } else {
