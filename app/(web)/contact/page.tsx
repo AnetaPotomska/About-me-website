@@ -1,31 +1,15 @@
 import { ContactForm } from '@/components/contact/ContactForm'
+import { Email } from '@/components/contact/Email'
 import { useTranslations } from 'next-intl'
-import Link from 'next/link'
 
 export default function Contact() {
   const t = useTranslations('contactMePage')
-
-  const email = process.env.EMAIL
 
   return (
     <>
       <div className="contact-title">
         <h2>{t('contactDialog')}:</h2>
-        <Link
-          title={t('emailLabel')}
-          aria-label={t('emailLabel')}
-          href={`mailto:${email}`}
-          target="_blank"
-          className="no-text-decorations"
-        >
-          <h2 className="no-wrap important-text">
-            aneta.
-            <wbr />
-            potomska@
-            <wbr />
-            seznam.cz
-          </h2>
-        </Link>
+        <Email emailLabel={t('emailLabel')} />
       </div>
       <hr />
       <ContactForm

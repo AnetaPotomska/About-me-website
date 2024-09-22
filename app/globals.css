@@ -387,6 +387,10 @@ button.web-btn {
   text-decoration: none;
 }
 
+.display-none {
+  display: none;
+}
+
 /* Page ------------------------------------------------------------------------- */
 
 .page-container {
