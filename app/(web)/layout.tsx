@@ -1,6 +1,7 @@
 import { Footer } from '@/components/footer/Footer'
 import { Navbar } from '@/components/navbar/Navbar'
 import { useTranslations } from 'next-intl'
+import { Toaster } from 'react-hot-toast'
 
 export default function WebLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   const t = useTranslations('navPaths')
@@ -37,6 +38,12 @@ export default function WebLayout({ children }: Readonly<{ children: React.React
         </div>
       </main>
       <Footer />
+      <Toaster
+        position="top-right"
+        toastOptions={{
+          className: 'toaster',
+        }}
+      />
     </>
   )
 }

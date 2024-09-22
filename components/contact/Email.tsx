@@ -9,12 +9,19 @@ interface EmailProps {
 
 export const Email = ({ emailLabel }: EmailProps) => {
   const [email, setEmail] = useState('')
+  const [name, setName] = useState('')
+  const [surname, setSurname] = useState('')
+  const [domain, setDomain] = useState('')
 
   useEffect(() => {
-    const user = 'aneta.potomska'
+    const name = 'aneta'
+    const surname = 'potomska'
     const domain = 'seznam.cz'
 
-    setEmail(`${user}@${domain}`)
+    setName(name)
+    setSurname(surname)
+    setDomain(domain)
+    setEmail(`${name}.${surname}@${domain}`)
   }, [])
 
   return (
@@ -26,12 +33,12 @@ export const Email = ({ emailLabel }: EmailProps) => {
       className="no-text-decorations"
     >
       <h2 className="no-wrap important-text">
-        aneta.
+        {name}.
         <wbr />
         <span className="display-none">duwlanv</span>
-        potomska@
+        {surname}@
         <wbr />
-        seznam.cz
+        {domain}
       </h2>
     </Link>
   )

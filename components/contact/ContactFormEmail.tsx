@@ -3,16 +3,24 @@ import { formatDate } from '@/lib/utils'
 interface ContactFormEmailProps {
   message: string
   senderEmail: string
+  locale: string
 }
 
-export const ContactFormEmail = ({ message, senderEmail }: ContactFormEmailProps) => {
+export const ContactFormEmail = ({ message, senderEmail, locale }: ContactFormEmailProps) => {
   const time = new Date()
 
   return (
     <>
-      <h2 className="no-text-decorations">od: {senderEmail}</h2>
-      <small>{formatDate(time)}</small>
-      <p>zpráva: {message}</p>
+      <p className="no-text-decorations">
+        <b>od:</b> {senderEmail}
+      </p>
+      <small>
+        <b>v:</b> {formatDate(time)} ({locale})
+      </small>
+      <hr />
+      <p>
+        <b>zpráva:</b> {message}
+      </p>
     </>
   )
 }

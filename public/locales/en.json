@@ -1,4 +1,15 @@
 {
+  "toast": {
+    "email": {
+      "success": "Email send successfully",
+      "failure": {
+        "sender": "Invalid email address",
+        "message": "Invalid message",
+        "default": "Couldn't send email"
+      }
+    }
+  },
+
   "welcomePage": {
     "mainContent": "Hello, I am software engeneer with interest in web development.",
     "primaryAction": "What I do",

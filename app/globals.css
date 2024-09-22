@@ -265,34 +265,6 @@ footer .icon:hover {
   fill: var(--color-text);
 }
 
-/* Buttons icons */
-
-.web-btn .icon {
-  height: var(--size-small-icon);
-  width: auto;
-}
-
-.web-btn .icon:hover {
-  scale: var(--size-big-scale);
-  transition: var(--transition);
-}
-
-.web-btn-secondary .icon {
-  fill: var(--color-secondary);
-}
-
-.web-btn-secondary:hover .icon {
-  fill: var(--color-primary);
-}
-
-.web-btn-primary .icon {
-  fill: var(--color-background);
-}
-
-.web-btn-primary:hover .icon {
-  fill: var(--color-text);
-}
-
 /* Buttons ------------------------------------------------------------------------- */
 
 .btn-group {
@@ -334,6 +306,17 @@ button.web-btn {
   transition: var(--transition);
 }
 
+.web-btn:disabled {
+  opacity: 0.5;
+  scale: 100%;
+  transition: none;
+}
+
+.web-btn:disabled .icon:hover {
+  scale: 100%;
+  transition: none;
+}
+
 .web-btn-secondary {
   border: var(--size-small-border) solid var(--color-secondary);
   color: var(--color-text);
@@ -356,6 +339,19 @@ button.web-btn {
 .web-btn-tertiary:active {
   border: var(--size-small-border) solid var(--color-secondary);
   transition: var(--transition);
+}
+
+.web-btn:disabled.web-btn-primary:hover {
+  background-color: var(--color-primary)
+}
+
+
+.web-btn:disabled.web-btn-primary .icon {
+  fill: var(--color-background);
+}
+
+.web-btn:disabled.web-btn-primary .icon:hover {
+  fill: var(--color-background);
 }
 
 .web-shadow {
@@ -901,4 +897,40 @@ hr.divider {
 .web-form .icon:hover,
 .web-form .icon:focus {
   fill: var(--color-background);
+}
+
+/* Toaster ------------------------------------------------------------------------- */
+
+.toaster {
+  background-color: var(--color-background) !important;
+  color: var(--color-text) !important;
+}
+
+
+/* Buttons icons */
+
+.web-btn .icon {
+  height: var(--size-small-icon);
+  width: auto;
+}
+
+.web-btn .icon:hover {
+  scale: var(--size-big-scale);
+  transition: var(--transition);
+}
+
+.web-btn-secondary .icon {
+  fill: var(--color-secondary);
+}
+
+.web-btn-secondary:hover .icon {
+  fill: var(--color-primary);
+}
+
+.web-btn-primary .icon {
+  fill: var(--color-background);
+}
+
+.web-btn-primary:hover .icon {
+  fill: var(--color-text);
 }

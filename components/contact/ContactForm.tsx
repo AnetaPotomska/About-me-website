@@ -3,6 +3,9 @@
 import { ContactFormType } from '@/lib/types'
 import { SubmitButton } from './SubmitButton'
 import { sendEmail } from '@/lib/sendEmail'
+import toast from 'react-hot-toast'
+import { useTranslations } from 'next-intl'
+import { useRef, useState } from 'react'
 
 interface ContactFormProps {
   label: string
@@ -12,10 +15,26 @@ interface ContactFormProps {
 }
 
 export const ContactForm = ({ label, textInput, textBoxInput, submitLabel }: ContactFormProps) => {
+  const t = useTranslations('toast')
+  const ref = useRef<HTMLFormElement>(null)
+
   return (
     <>
       <h3>{label}:</h3>
-      <form className="web-form" action={sendEmail}>
+      <form
+        ref={ref}
+        className="web-form"
+        action={async (formData) => {
+          const { error } = await sendEmail(formData)
+
+          if (error) {
+            toast.error(error)
+            return
+          }
+          toast.success(t('email.success'))
+          ref.current?.reset()
+        }}
+      >
         <div className="form-group">
           <label htmlFor="email">{textInput.label}</label>
           <input

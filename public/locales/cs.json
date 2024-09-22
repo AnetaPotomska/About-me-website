@@ -1,4 +1,15 @@
 {
+  "toast": {
+    "email": {
+      "success": "Email úspešně odeslán",
+      "failure": {
+        "sender": "Neplatná emailová adresa",
+        "message": "Neplatná zpráva",
+        "default": "Nepodařilo se odeslat email"
+      }
+    }
+  },
+
   "welcomePage": {
     "mainContent": "Zdravím, jsem softwarový inženýr se zájmem o web development.",
     "primaryAction": "Čím se zabývám",
